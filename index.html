@@ -19,7 +19,9 @@
     gtag('js', new Date());
     gtag('config', 'CHANGE');
   </script>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
   <link rel="stylesheet" href="./css/landing.css">
 </head>
 <body>
@@ -28,28 +30,115 @@
       <img src="./images/octobo-logo.png" alt="PlayOctobo logo">
     </section>
 
-    <section class="right">
+    <section class="right animated fadeIn delay-2s">
       <img src="./images/backed-by-techstars.png" alt="Techstars">
     </section>
   </nav>
 
   <section class="masthead">
-    <section class="hex">
+    <section class="hex animated fadeInRightBig">
       <img src="./images/masthead-hex.svg" alt="">
     </section>
 
     <section class="inner">
-      <div class="content">
-        <h1>Hi! I'm Octobo!</h1>
-        <p>A smart plush that transforms passive screen time into mindful play time. Octobo is the learning companion that your child will cherish for years to come.</p>
-        <a href="#" class="btn">Pre-Order Now</a>
-        <small>$99 Limited Time Price</small>
-      </div>
+      <section class="content">
+        <h1 class="animated fadeIn delay-1-5s">Hi! I'm Octobo!</h1>
+        <p class="animated fadeIn delay-2s">A smart plush that transforms passive screen time into mindful play time. Octobo is the learning companion that your child will cherish for years to come.</p>
 
-      <div class="plush-image">
+        <section class="animated fadeIn delay-2-5s">
+          <a href="#" class="btn">Pre-Order Now</a>
+          <small>$99 Limited Time Price</small>
+        </section>
+      </section>
+
+      <section class="plush-image animated fadeIn delay-1s">
         <img src="./images/octobo-header-plush.png" alt="PlayOctobo plush">
-      </div>
+      </section>
     </section>
   </section>
+
+  <section class="product-press" data-aos="fade-up">
+    <section class="bar">
+      <img src="./images/usc-games.png" alt="USCGames" class="logo">
+      <img src="./images/engadget.png" alt="Engadget" class="logo">
+
+      <section class="video">
+        <img src="./images/video.jpg" alt="">
+        <a href="#">
+          <img src="./images/play-button.svg" alt="">
+        </a>
+      </section>
+
+      <img src="./images/tech-crunch.png" alt="Tech Crunch" class="logo">
+      <img src="./images/zam.png" alt="Zam" class="logo">
+    </section>
+  </section>
+
+  <section class="product-features">
+    <section class="container">
+      <section class="feature-tabs" data-tabgroup="productFeatureTabs">
+        <li><a href="#InnovativeStorytelling" class="active">Innovative Storytelling</a></li>
+        <li><a href="#ImmediateEmotionalFeedback">Immediate Emotional Feedback</a></li>
+        <li><a href="#ExpandingDigitalLibrary">Expanding Digital Library</a></li>
+      </section>
+
+      <section class="tab-content" id="productFeatureTabs">
+        <!-- start Innovative Storytelling -->
+        <section id="InnovativeStorytelling" class="tab-panel">
+          <section class="image">
+            <img src="./images/Innovative-Storytelling.png" alt="Innovative Storytelling photo">
+          </section>
+
+          <section class="content">
+            <img src="./images/read.svg" alt="Book">
+            <h1>Innovative Storytelling</h1>
+            <p>Octobo improves on conventional learning paradigms (hello, dreaded spelling test!) and their rigid “pass/fail” metrics by <span class="bold">working in tandem with our interactive Storykits</span> to capture your child’s imagination. The combination of storybook, story tokens, and friendly feedback from the plush itself creates a <span class="bold">holistic experience to amplify your child’s engagement</span> in a learning activity.
+
+            By identifying the correct token on the storybook page and placing it in Octobo’s bowl, your child earns an <span class="bold">immediate, empathetic reaction</span> from her plushy playmate. Volitional manipulation of small objects <span class="bold">builds focus, understanding, and fine motor control.</span></p>
+          </section>
+        </section>
+        <!-- end Innovative Storytelling -->
+
+        <!-- start Immediate Emotional Feedback -->
+        <section id="ImmediateEmotionalFeedback" class="tab-panel">
+          <section class="image">
+            <img src="./images/Immediate-Emotional-Feedback.png" alt="Immediate Emotional Feedback photo">
+          </section>
+
+          <section class="content">
+            <img src="./images/emotion.svg" alt="Emotions">
+            <h1>Immediate Emotional Feedback</h1>
+            <p>Octobo combines a sensor-stuffed body, arms, and an expressive “face” that <span class="bold">instantly reacts</span> to children’s hugs, tickles, wiggles and handshakes! We’ve worked hard to keep Octobo’s advanced technologies <span class="bold">well-hidden</span>, in order to mimic the huggable appeal of a classic stuffy.
+
+            Octobo’s extensive bank of intelligent responses delivers carefully curated emotions that <span class="bold">demonstrate cause and effect, encourage active play</span>, and even model core concepts like <span class="bold">empathy and cooperation</span>.</p>
+          </section>
+        </section>
+        <!-- end Immediate Emotional Feedback-->
+
+        <!-- start Expanding Digital Library -->
+        <section id="ExpandingDigitalLibrary" class="tab-panel">
+          <section class="image">
+            <img src="./images/Expanding-Digital-Library.png" alt="Expanding Digital Library photo">
+          </section>
+
+          <section class="content">
+            <img src="./images/idea.svg" alt="Light Bulb">
+            <h1>Expanding Digital Library</h1>
+            <p>Unlike other single-purpose “smart” toys, Octobo <span class="bold">evolves alongside your child</span> thanks to our growing collection of storykits, apps, and games. Storykits and games for toddlers <span class="bold">focus on learning shapes, colors and patterns</span>. Advanced expansion packs help older children <span class="bold">develop literacy, numeracy, and memory skills</span>.
+
+            In the coming year, we’ll introduce a new line of behavioral games, which <span class="bold">encourage positive behaviours</span> like brushing your teeth, or tidying your toys. Core values like <span class="bold">sharing, respect and active play</span> are built in at each level in an age-appropriate manner.</p>
+          </section>
+        </section>
+        <!-- end Expanding Digital Library-->
+      </section>
+    </section>
+  </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="./js/landing.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
