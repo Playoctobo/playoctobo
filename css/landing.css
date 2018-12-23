@@ -1,0 +1,159 @@
+/**********************************
+  GLOBAL STYLES
+***********************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --lightPurple: #872baf;
+  --lightBlue: #89d8f8;
+  --yellow: #f8d51d;
+  --purple: #872baf;
+  --black: #092f5b;
+  --green: #00cc5a;
+  font-size: 100%;
+  --blue: #15d4ef;
+  --white: #fff;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--back);
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  position: relative;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.bold { font-weight: 800; }
+.right { float: right; }
+.left { float: left; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.btn {
+  box-shadow: 0 6px 10px 0 var(--lightBlue);
+  background-color: var(--lightBlue);
+  justify-content: center;
+  -ms-align-items: center;
+  display: -webkit-flex;
+  transition: all 0.3s;
+  align-items: center;
+  color: var(--white);
+  border-radius: 3px;
+  position: relative;
+  display: -ms-flex;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  padding: 20px;
+  height: 60px;
+}
+
+.btn:hover {}
+
+/**********************************
+  NAVIGATION
+***********************************/
+nav {
+  padding: 0 245px 0 250px;
+  z-index: 1;
+}
+
+nav .left img {
+  padding-top: 35px;
+  width: 265px;
+}
+
+nav .right img {
+  padding-top: 40px;
+  width: 94px;
+}
+
+/**********************************
+  MASTHEAD
+***********************************/
+.masthead {
+  padding-bottom: 245px;
+  padding-left: 250px;
+  position: relative;
+}
+
+.masthead .hex {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+}
+
+.masthead .inner {
+  grid-template-columns: 40% 60%;
+  position: relative;
+  display: grid;
+  width: 100%;
+}
+
+.masthead .inner h1 {
+  line-height: 56px;
+  font-size: 42px;
+}
+
+.masthead .inner p {
+  padding-bottom: 38px;
+  padding-top: 24px;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.masthead .inner .btn {
+  margin-bottom: 14.4px;
+  width: 321px;
+}
+
+.masthead .inner .plush-image {
+  position: absolute;
+  right: 12%;
+  top: -20%;
+}
+
+.masthead .inner .plush-image img {
+  height: 480px;
+}
