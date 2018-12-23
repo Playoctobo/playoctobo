@@ -1,6 +1,9 @@
+let current = null;
+
 $(document).ready(function() {
   $('.tab-content > .tab-panel').hide();
-  $('.tab-content > .tab-panel:first-of-type').show();
+  current = $('.tab-content > .tab-panel:first-of-type').show();
+
 
   $('.feature-tabs a').click(function(e) {
     e.preventDefault();
@@ -10,7 +13,13 @@ $(document).ready(function() {
         link = $this.closest('li').siblings().children('a'),
         target = $this.attr('href');
 
-    link.removeClass('active');
+    if (current) {
+      current.hide();
+    }
+
+    current = $(target);
+
+    //link.removeClass('active');
     $this.addClass('active');
     $(tabContent).children('.tab-panel').hide();
     $(target).show();
