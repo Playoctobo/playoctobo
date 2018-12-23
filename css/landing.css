@@ -43,6 +43,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+small { font-size: 16px; }
+
 a {
   text-decoration: none;
   color: var(--black);
@@ -70,8 +72,9 @@ img {
 }
 
 .btn {
-  box-shadow: 0 6px 10px 0 var(--lightBlue);
+  box-shadow: 0 6px 6px 0 var(--lightBlue);
   background-color: var(--lightBlue);
+  transition: box-shadow 0.4;
   justify-content: center;
   -ms-align-items: center;
   display: -webkit-flex;
@@ -88,7 +91,7 @@ img {
   height: 60px;
 }
 
-.btn:hover {}
+.btn:hover { box-shadow: none; }
 
 /**********************************
   NAVIGATION
