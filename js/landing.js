@@ -1,9 +1,9 @@
 let current = null;
 
 $(document).ready(function() {
+  // Tabs
   $('.tab-content > .tab-panel').hide();
   current = $('.tab-content > .tab-panel:first-of-type').show();
-
 
   $('.feature-tabs a').click(function(e) {
     e.preventDefault();
@@ -23,5 +23,10 @@ $(document).ready(function() {
     $this.addClass('active');
     $(tabContent).children('.tab-panel').hide();
     $(target).show();
+  });
+
+  $('.feature-tabs li').click(function() {
+    $(this).addClass('active')
+           .siblings('.active').removeClass('active');
   });
 });
