@@ -35,7 +35,10 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--back);
+  line-height: 48px;
   font-weight: 900;
+  padding: 16px 0;
+  font-size: 36px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -287,10 +290,98 @@ input[type="radio"] { display: none; }
   margin-left: 0;
 }
 
-.tab-content .tab-panel > .content h1 {
-  line-height: 48px;
-  padding: 16px 0;
-  font-size: 36px;
+/**********************************
+  MEET OCTOBO'S FRIENDS
+***********************************/
+.meet-friends {
+  display: -webkit-flex;
+  padding-bottom: 164px;
+  position: relative;
+  padding-top: 107px;
+  display: -ms-flex;
+  display: flex;
+}
+
+.meet-friends .hex {
+  position: absolute;
+  right: 0;
+}
+
+.meet-friends .content {
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 34px;
+  display: inline-grid;
+}
+
+.meet-friends .content .friends-content h1 { padding-bottom: 0; }
+
+.meet-friends .content .friends-content p {
+  margin-top: -10px;
+  width: 378px;
+}
+
+.meet-friends .content .friends-images {
+  grid-template-columns: 35% 35%;
+  grid-template-rows: 58% 67%;
+  display: inline-grid;
+  position: relative;
+}
+
+.meet-friends .content .friends-images .arely .inner,
+.meet-friends .content .friends-images .cassie .inner,
+.meet-friends .content .friends-images .peiyu .inner,
+.meet-friends .content .friends-images .zane .inner {
+  position: relative;
+  font-style: italic;
+}
+
+.meet-friends .content .friends-images .cassie p,
+.meet-friends .content .friends-images .peiyu p,
+.meet-friends .content .friends-images .zane p,
+.meet-friends .content .friends-images .peiyu img,
+.meet-friends .content .friends-images .zane img {
+  position: absolute;
+}
+
+.meet-friends .content .friends-images .arely img {
+  height: 129px;
+  width: 152px;
+}
+
+.meet-friends .content .friends-images .arely p {
+  text-align: center;
+}
+
+.meet-friends .content .friends-images .cassie img {
+  height: 143px;
+  width: 133px;
+}
+
+.meet-friends .content .friends-images .cassie p {
+  bottom: 2%;
+  left: 5%;
+}
+
+.meet-friends .content .friends-images .peiyu img {
+  height: 150px;
+  width: 128px;
+  left: -13%;
+}
+
+.meet-friends .content .friends-images .peiyu p {
+  bottom: -150px;
+  left: -9%;
+}
+
+.meet-friends .content .friends-images .zane img {
+  height: 163px;
+  width: 172px;
+  left: -35%;
+}
+
+.meet-friends .content .friends-images .zane p {
+  right: 50%;
+  top: 17px;
 }
 
 /**********************************
