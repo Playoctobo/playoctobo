@@ -291,6 +291,24 @@ input[type="radio"] { display: none; }
 }
 
 /**********************************
+  BUNDLES SECTION
+***********************************/
+.bundles-section {
+  background-color: rgba(137, 216, 248, 0.2);
+  display: -webkit-flex;
+  padding-bottom: 72px;
+  position: relative;
+  padding-top: 96px;
+  display: -ms-flex;
+  display: flex;
+}
+
+.bundles-section .hex {
+  position: absolute;
+  right: 0;
+}
+
+/**********************************
   MEET OCTOBO'S FRIENDS
 ***********************************/
 .meet-friends {
