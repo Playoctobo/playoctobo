@@ -503,6 +503,11 @@ nav .right img {
   right: -5%;
 }
 
+.storykits .btn {
+  margin-top: 150px;
+  width: 321px;
+}
+
 /** yellow box **/
 .storykits .box.yellow {
   border: 2px solid var(--yellow);
