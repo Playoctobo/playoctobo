@@ -421,8 +421,8 @@ nav .right img {
   -ms-flex-direction: column;
   -ms-align-items: center;
   flex-direction: column;
-  padding-bottom: 73.4px;
   display: -webkit-flex;
+  padding-bottom: 145px;
   align-items: center;
   display: -ms-flex;
   padding-top: 72px;
@@ -557,6 +557,104 @@ nav .right img {
   background-color: var(--yellow);
   bottom: -12%;
   left: -4%;
+}
+
+/**********************************
+  PERFECT FOR`
+***********************************/
+.perfect-for {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  padding-bottom: 95px;
+  align-items: center;
+  position: relative;
+  display: -ms-flex;
+  display: flex;
+}
+
+.perfect-for .hex {
+  position: absolute;
+  z-index: -1;
+}
+
+.perfect-for .perfect-for-grid {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  display: grid;
+}
+
+.perfect-for .perfect-for-grid .text {
+  width: 300px;
+}
+
+.perfect-for .perfect-for-grid > .box {
+  border: 2px solid var(--green);
+  background-color: var(--white);
+  position: relative;
+  border-radius: 3px;
+  height: 209px;
+  width: 408px;
+}
+
+.two-threeYears { margin-left: -80px; }
+
+.three-fiveYears {
+  margin-right: 102px;
+  margin-top: 14px;
+}
+
+.five-sevenYears {
+  margin-top: 36px;
+}
+
+.perfect-for .perfect-for-grid > .box .left { height: 100%; }
+.perfect-for .perfect-for-grid > .box .left img { height: inherit; }
+
+.perfect-for .perfect-for-grid > .box .box__content {
+  position: absolute;
+  right: 40px;
+}
+
+.perfect-for .perfect-for-grid > .box .box__content h2 {
+  padding-top: 33px;
+}
+
+.perfect-for .perfect-for-grid > .box .box__content table tr td:nth-child(1),
+.perfect-for .perfect-for-grid > .box .box__content table tr td:nth-child(1) {
+  display: -webkit-flex;
+  padding-bottom: 9px;
+  display: -ms-flex;
+  margin-top: 5px;
+  display: flex;
+  width: 18px;
+}
+
+.perfect-for .perfect-for-grid > .box .box__content table tr td:nth-child(2),
+.perfect-for .perfect-for-grid > .box .box__content table tr td:nth-child(2) {
+  padding-left: 9px;
+}
+
+.perfect-for .perfect-for-grid > .box .box__content table tr td:last-child,
+.perfect-for .perfect-for-grid > .box .box__content table tr td:last-child {
+  padding-bottom: 0;
+}
+
+.perfect-for .btn {
+  margin-top: 70px;
+  width: 321px;
+}
+
+/**********************************
+  MADE BY
+***********************************/
+.made-by {
+  background-color: var(--lightBlueOpacity);
+  padding-bottom: 79.7px;
+  padding-top: 322px;
 }
 
 /**********************************
