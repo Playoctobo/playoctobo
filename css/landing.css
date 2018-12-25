@@ -128,9 +128,31 @@ img {
 /**********************************
   NAVIGATION
 ***********************************/
-nav {
-  padding: 0 245px 0 250px;
+nav,
+nav .inner {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-flex;
+  position: relative;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
   z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  nav { padding: 0 245px 0 250px; }
+
+  nav,
+  nav .inner { display: block; }
+}
+
+nav .hex {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
 }
 
 nav .left img {
@@ -147,27 +169,26 @@ nav .right img {
   MASTHEAD
 ***********************************/
 .masthead {
-  padding-bottom: 245px;
-  padding-left: 250px;
+  padding-bottom: 45px;
   position: relative;
-}
-
-.masthead .hex {
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  top: 0;
 }
 
 .masthead .inner {
-  grid-template-columns: 40% 60%;
   position: relative;
-  display: grid;
   width: 100%;
+  z-index: 1;
 }
 
 .masthead .inner .content {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -ms-align-items: center;
+  flex-direction: column;
+  padding-bottom: 38px;
+  align-items: center;
   padding-top: 111px;
+  text-align: center;
+  display: flex;
 }
 
 .masthead .inner h1 {
@@ -187,13 +208,31 @@ nav .right img {
   width: 321px;
 }
 
-.masthead .inner .plush-image {
-  position: absolute;
-  right: 12%;
-}
+@media (min-width: 1200px) {
+  .masthead {
+    padding-bottom: 245px;
+    padding-left: 250px;
+  }
 
-.masthead .inner .plush-image img {
-  height: 550px;
+  .masthead .inner {
+    grid-template-columns: 40% 60%;
+    display: grid;
+  }
+
+  .masthead .content {
+    padding-bottom: 0;
+  }
+
+  .masthead .inner p { width: 500px; }
+
+  .masthead .inner .plush-image {
+    position: absolute;
+    right: 12%;
+  }
+
+  .masthead .inner .plush-image img {
+    height: 550px;
+  }
 }
 
 /**********************************
@@ -203,18 +242,21 @@ nav .right img {
 
 .bar {
   background-color: var(--green);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   justify-content: center;
   -ms-align-items: center;
+  flex-direction: column;
   display: -webkit-flex;
   align-items: center;
   display: -ms-flex;
   display: flex;
-  height: 160px;
   padding: 42px;
+  height: auto;
 }
 
 .bar .logo {
-  margin: 0 24px;
+  margin: 24px 0;
   height: 35px;
 }
 
@@ -241,17 +283,31 @@ nav .right img {
   left: 50%;
 }
 
+@media (min-width: 1200px) {
+  .bar {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 160px;
+    padding: 42px;
+  }
+
+  .bar .logo { margin: 0 24px; }
+}
+
 /**********************************
   PRODUCT FEATURES
 ***********************************/
 .product-features .feature-tabs {
   border-bottom: 2px solid var(--lightBlue);
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -ms-align-items: center;
+  flex-direction: column;
   display: -webkit-flex;
+  align-items: center;
   display: -ms-flex;
   display: flex;
-  width: 821px;
-  margin: auto;
 }
 
 .product-features .feature-tabs > li {
@@ -269,9 +325,7 @@ nav .right img {
 .tab-content { padding-top: 31px; }
 
 .tab-content .tab-panel {
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 40px;
-  display: inline-grid;
+  display: block;
 }
 
 .tab-content .tab-panel > .content {
@@ -282,7 +336,6 @@ nav .right img {
   display: -ms-flex;
   padding-top: 69px;
   display: flex;
-  width: 456px;
 }
 
 .tab-content .image {
@@ -292,6 +345,25 @@ nav .right img {
 .tab-content .tab-panel img {
   height: inherit;
   margin-left: 0;
+}
+
+@media (min-width: 1200px) {
+  .product-features .feature-tabs {
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: auto;
+    width: 821px;
+  }
+
+  .tab-content .tab-panel {
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 40px;
+    display: inline-grid;
+  }
+
+  .tab-content .tab-panel > .content { width: 456px; }
 }
 
 /**********************************
@@ -346,12 +418,7 @@ nav .right img {
 }
 
 .pricing__tables {
-  grid-template-columns: 20% 20%;
-  justify-content: center;
-  grid-column-gap: 20px;
-  position: relative;
-  margin-top: -94px;
-  display: grid;
+  display: block;
 }
 
 .pricing__table.pricing__table--starterPack,
@@ -371,6 +438,7 @@ nav .right img {
 
 .pricing__table.pricing__table--starterPack {
   border: 2px solid var(--purple);
+  margin-bottom: 23px;
 }
 
 .pricing__table.pricing__table--advancedPack {
@@ -411,6 +479,21 @@ nav .right img {
 .pricing__table.pricing__table--starterPack .illustration img,
 .pricing__table.pricing__table--advancedPack .illustration img {
   height: 166px;
+}
+
+@media (min-width: 1200px) {
+  .pricing__tables {
+    grid-template-columns: 20% 20%;
+    justify-content: center;
+    grid-column-gap: 20px;
+    position: relative;
+    margin-top: -94px;
+    display: grid;
+  }
+
+  .pricing__table.pricing__table--starterPack {
+    margin-bottom: 0;
+  }
 }
 
 /**********************************
@@ -565,11 +648,11 @@ nav .right img {
 .perfect-for {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
+  padding-bottom: 254.4px;
   justify-content: center;
   -ms-align-items: center;
   flex-direction: column;
   display: -webkit-flex;
-  padding-bottom: 95px;
   align-items: center;
   position: relative;
   display: -ms-flex;
@@ -653,8 +736,32 @@ nav .right img {
 ***********************************/
 .made-by {
   background-color: var(--lightBlueOpacity);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -ms-align-items: center;
+  flex-direction: column;
   padding-bottom: 79.7px;
-  padding-top: 322px;
+  display: -webkit-flex;
+  align-items: center;
+  padding-top: 250px;
+  position: relative;
+  display: -ms-flex;
+  display: flex;
+}
+
+.made-by img {
+  padding-bottom: 72px;
+  position: absolute;
+  height: 396px;
+  width: 620px;
+  top: -35%;
+}
+
+.made-by .made-by-grid {
+  grid-template-columns: 17% 22%;
+  justify-content: center;
+  grid-column-gap: 65px;
+  display: grid;
 }
 
 /**********************************
