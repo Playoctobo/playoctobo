@@ -11,49 +11,46 @@
   <meta property="og:url" content="">
   <meta property="og:description" content="">
   <meta property="og:title" content="">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-89526562-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'CHANGE');
-  </script>
-  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/landing.css">
 </head>
 <body>
   <nav>
     <section class="hex animated fadeInRightBig">
-      <img src="./images/masthead-hex.svg" alt="">
+      <img src="./images/masthead-hex.svg">
     </section>
 
-    <section class="inner">
-      <section class="left">
-        <img src="./images/octobo-logo.png" alt="PlayOctobo logo">
-      </section>
+    <section class="container">
+      <section class="inner">
+        <section class="left">
+          <img src="./images/octobo-logo.png" alt="PlayOctobo logo">
+        </section>
 
-      <section class="right animated fadeIn delay-1-5s">
-        <img src="./images/backed-by-techstars.png" alt="Techstars">
+        <section class="right animated fadeIn delay-1-5s">
+          <img src="./images/backed-by-techstars.png" alt="Techstars">
+        </section>
       </section>
     </section>
   </nav>
 
   <section class="masthead">
-    <section class="inner">
-      <section class="content">
-        <h1 class="animated fadeIn delay-1-5s">Hi! I'm Octobo!</h1>
-        <p class="animated fadeIn delay-1-5s">A smart plush that transforms passive screen time into mindful play time. Octobo is the learning companion that your child will cherish for years to come.</p>
-
-        <section class="animated fadeIn delay-1-5s">
-          <a href="#" class="btn">Pre-Order Now</a>
-          <small>$99 Limited Time Price</small>
+    <section class="container">
+      <section class="inner">
+        <section class="plush-image animated fadeIn delay-1s">
+          <img src="./images/octobo-header-plush.png" alt="PlayOctobo plush">
         </section>
-      </section>
 
-      <section class="plush-image animated fadeIn delay-1s">
-        <img src="./images/octobo-header-plush.png" alt="PlayOctobo plush">
+        <section class="content">
+          <h1 class="animated fadeIn delay-1-5s">Hi! I'm Octobo!</h1>
+          <p class="animated fadeIn delay-1-5s">A smart plush that transforms passive screen time into mindful play time. Octobo is the learning companion that your child will cherish for years to come.</p>
+
+          <section class="animated fadeIn delay-1-5s">
+            <a href="#" class="btn">Pre-Order Now</a>
+            <small>$99 Limited Time Price</small>
+          </section>
+        </section>
       </section>
     </section>
   </section>
@@ -392,9 +389,9 @@
 
       <!-- start 2-3 years old -->
       <section class="box two-threeYears">
-        <div class="left">
+        <section class="left">
           <img src="./images/2-3.jpg" alt="2-3 Years Old">
-        </div>
+        </section>
 
         <section class="box__content">
           <h2>2-3 Years Old</h2>
@@ -436,9 +433,9 @@
 
       <!-- start 3-5 years old -->
       <section class="box three-fiveYears">
-        <div class="left">
+        <section class="left">
           <img src="./images/3-5.jpg" alt="3-5 Years Old">
-        </div>
+        </section>
 
         <section class="box__content">
           <h2>3-5 Years Old</h2>
@@ -480,9 +477,9 @@
 
       <!-- start 5-7 years old -->
       <section class="box five-sevenYears">
-        <div class="left">
+        <section class="left">
           <img src="./images/5-7.jpg" alt="5-7 Years Old">
-        </div>
+        </section>
 
         <section class="box__content">
           <h2>5-7 Years Old</h2>
@@ -548,6 +545,57 @@
 
     <section class="header">
       <h1>How Does it Work?</h1>
+    </section>
+
+    <section class="verticalLine">
+      <section class="top-line"></section>
+        <svg id="mySVG" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="0" y2="100" stroke="black" stroke-width="0.6" id="line" />
+        </svg>
+    </section>
+
+    <section class="container grid">
+      <section class="box sensors">
+        <img src="./images/how-it-works-point1.png" alt="How it works step" class="pointImage">
+        <img src="./images/how-it-works-step1.jpg" alt="How it works image" class="stepImage">
+
+        <section class="text">
+          <h2>How sensors detect interaction</h2>
+          <p>Seamless integration of touch sensors into the body of the plush allow it to distinguish between a poke and a hug, and make Octobo’s reactions feel immediate, specific and alive.
+
+          An RFID reader pad in Octobo’s bowl scans the story tokens that come with the storybooks.
+
+          The plush and tablet connect via Bluetooth, and operate without wires or wifi, making Octobo perfect for car or airplane travel.
+
+          The tablet’s screen detects touch and responds immediately. (In fact, we added an empathetic “eye-poke” reaction after play-testing revealed that kids just couldn’t resist poking Octobo in the eye!)</p>
+        </section>
+      </section>
+
+      <section class="box learn">
+        <img src="./images/how-it-works-point2.png" alt="How it works step" class="pointImage">
+        <img src="./images/how-it-works-step2.png" alt="How it works image" class="stepImage">
+
+        <section class="text">
+          <h2>How the children learn</h2>
+          <p>“Tell me and I forget, show me and I remember, involve me and I understand.” <snap class="bold">— from Xun Kuang, 3rd century BC</snap>
+
+          Modern research echoes ancient wisdom in confirming that an emotionally rich, playful, and self-directed learning experience leads to better results than the classical pedagogy many of us grew up with (and often disliked).
+
+          By immersing children in a storytelling world of sights, sounds, physical objects, and interaction, Octobo engages a child’s mind, body, and heart in a full sensorimotor experience.</p>
+        </section>
+      </section>
+
+      <section class="box development">
+        <img src="./images/how-it-works-point3.png" alt="How it works step" class="pointImage">
+        <img src="./images/how-it-works-step3.png" alt="How it works image" class="stepImage">
+
+        <section class="text">
+          <h2>How our games stimulate pro-social development</h2>
+          <p>Along with encouraging cooperation and physical exercise with stories and mini-games, Octobo’s “operating system” mimics healthy social relationships. For example: the Parent Portal offers key features like time limits. But rather than a simple countdown, Octobo tells your child “I’m feeling tired and need to rest now. Let’s play again later!”
+
+          By modeling forthright speech about feelings and needs, Octobo helps your child learn to identify and express their feelings and needs as they navigate their own social environments.</p>
+        </section>
+      </section>
     </section>
   </section>
 
@@ -620,7 +668,8 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/landing.js"></script>
-
+  <script>AOS.init();</script>
 </body>
 </html>
