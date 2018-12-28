@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="337" height="332" viewBox="0 0 337 332">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="matrix(1 0 0 -1 0 332)">
+            <ellipse cx="168.26" cy="166.538" fill-rule="nonzero" stroke="#15D4EF" stroke-linecap="round" stroke-width="2" rx="164.663" ry="164.462"/>
+            <circle cx="245" cy="312" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <circle cx="333" cy="160" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <circle cx="285.413" cy="52" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <circle cx="306" cy="257" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <circle cx="91" cy="312" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <circle cx="50" cy="52" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <circle cx="4" cy="169" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <circle cx="27" cy="252" r="4" fill="#15D4EF" fill-rule="nonzero"/>
+            <ellipse cx="161.507" cy="2.594" fill="#15D4EF" fill-rule="nonzero" rx="2.597" ry="2.594"/>
+            <text fill="#1A2D45" font-family="Lato-Italic, Lato" font-size="16" font-style="italic" transform="matrix(1 0 0 -1 0 91.088)">
+                <tspan x="101.466" y="53">*Tablet not included</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
