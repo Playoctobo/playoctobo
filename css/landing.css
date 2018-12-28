@@ -9,6 +9,7 @@
 :root {
   --lightBlueOpacity: rgba(137, 216, 248, 0.2);
   --lightBlue: #89d8f8;
+  --darkBlue: #1A2D45;
   --yellow: #f8d51d;
   --purple: #872baf;
   --black: #092f5b;
@@ -34,9 +35,22 @@ html, body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a { color: var(--darkBlue);}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'galano_grotesque_demobold', sans-serif;
-  color: var(--back);
   line-height: 48px;
   font-weight: 900;
   padding: 16px 0;
@@ -62,7 +76,6 @@ small { font-size: 16px; }
 
 a {
   text-decoration: none;
-  color: var(--black);
   position: relative;
   cursor: pointer;
 }
@@ -112,6 +125,7 @@ img {
 
 .btn {
   background-color: var(--blue);
+  transition: box-shadow 0.4;
   justify-content: center;
   -ms-align-items: center;
   display: -webkit-flex;
@@ -130,13 +144,64 @@ img {
 }
 
 @media (min-width: 768px) {
-  .btn {
-    box-shadow: 0 6px 6px 0 var(--blue);
-    transition: box-shadow 0.4;
-  }
+  .btn { box-shadow: 0 10px 40px -10px rgba(21, 212, 239, 0.5); }
 }
 
 .btn:hover { box-shadow: none; }
+
+/** Modal **/
+.popup {
+  -webkit-transition: opacity  0.35s ease;
+  -moz-transition: opacity 0.35s ease;
+  -o-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
+  background: rgba(0,0,0, 0.75);
+  justify-content: center;
+  -ms-align-items: center;
+  display: -webkit-flex;
+  align-items: center;
+  display: -ms-flex;
+  z-index: 9999999;
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  top: -100vh;
+  opacity: 0;
+  left: 0;
+}
+
+/* The cancel button on popup */
+.popup a.closePopUp {
+  text-decoration: none;
+  color: var(--white);
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.5em;
+  right: 0.375em;
+  padding: 5px;
+  top: 0.2em;
+  margin: 0;
+}
+
+/* The cancel button on popup dialog */
+.popup a:hover {
+  color: #c0392b;
+}
+
+/* When popup is targeted, by clicking on link with #popup in HTML */
+.popup:target {
+  opacity: 1;
+  top: 0;
+}
+
+.popup .closePopUpOutSide {
+  position: absolute;
+  z-index: 9999991;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
 
 /**********************************
   NAVIGATION
@@ -622,6 +687,7 @@ nav .right img {
   display: block;
 }
 
+.storykit__info p { color: var(--white); }
 .storykit__info img { margin-bottom: 8px; }
 
 .storykits .box > .box__content {
@@ -959,7 +1025,7 @@ nav .right img {
   }
 
   .made-by .made-by-grid {
-    grid-template-columns: 17% 22%;
+    grid-template-columns: 27% 32%;
     justify-content: center;
     grid-column-gap: 65px;
     text-align: left;
