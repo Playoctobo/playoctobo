@@ -1009,8 +1009,19 @@ nav .right img {
   left: 41%;
 }
 
-.features .swiper-slide .middleIcon-image.batteriesIcon {
-  bottom: 38%;
+.features .swiper-slide .middleIcon-image.batteriesIcon,
+.features .swiper-slide .middleIcon-image.hypoallergenicIcon { bottom: 38%; }
+
+.features .swiper-slide .middleIcon-image.genuinePersonalityIcon { bottom: 41%; }
+.features .swiper-slide .middleIcon-image.hypoallergenicIcon { left: 42%; }
+.features .swiper-slide .middleIcon-image.operatingIcon { bottom: 37%; }
+.features .swiper-slide .middleIcon-image.sizeIcon { bottom: 34%; }
+
+.features .swiper-slide .middlePlush-image.operatingImage { top: 0; }
+
+.features .swiper-slide .middleIcon-image.soft-and-safe {
+  bottom: 41%;
+  left: 42%;
 }
 
 .features .swiper-slide .text {
@@ -1023,6 +1034,12 @@ nav .right img {
 }
 
 .features .swiper-slide .text h2 { color: var(--blue); }
+.swiper-pagination-bullet { background: var(--blue); }
+
+.swiper-pagination-bullet {
+  height: 10px;
+  width: 10px;
+}
 
 @media (min-width: 375px) {
   .features .swiper-slide .middlePlush-image {
@@ -1030,12 +1047,20 @@ nav .right img {
   }
 
   .features .swiper-slide .middleIcon-image {
-    bottom: 40%;
+    bottom: 37%;
     left: 43%;
   }
 
-  .features .swiper-slide .middleIcon-image.batteriesIcon {
-    bottom: 34%;
+  .features .swiper-slide .middleIcon-image.genuinePersonalityIcon { bottom: 34%; }
+  .features .swiper-slide .middleIcon-image.hypoallergenicIcon { bottom: 34%; }
+  .features .swiper-slide .middleIcon-image.batteriesIcon { bottom: 34%; }
+  .features .swiper-slide .middleIcon-image.soft-and-safe { bottom: 37%; }
+  .features .swiper-slide .middleIcon-image.operatingIcon { bottom: 33%; }
+  .features .swiper-slide .middleIcon-image.sizeIcon { bottom: 30%; }
+
+  .features .swiper-slide .middleIcon-image.tablet-sizesIcon {
+    bottom: 39%;
+    left: 43%;
   }
 }
 
@@ -1044,6 +1069,19 @@ nav .right img {
     bottom: 39%;
     left: 10%;
   }
+
+  .features .swiper-slide .middleIcon-image.hypoallergenicIcon {
+    bottom: 30%;
+    left: 43%;
+  }
+
+  .features .swiper-slide .middleIcon-image.soft-and-safe {
+    bottom: 33%;
+    left: 44%;
+  }
+
+  .features .swiper-slide .middleIcon-image.operatingIcon { bottom: 29%; }
+  .features .swiper-slide .middleIcon-image.tablet-sizesIcon { bottom: 36% }
 }
 
 @media (min-width: 768px) {
@@ -1052,15 +1090,25 @@ nav .right img {
   }
 
   .features .swiper-slide .middleIcon-image {
+    bottom: 33%;
     left: 47%;
   }
+
+  .features .swiper-slide .middleIcon-image.genuinePersonalityIcon { bottom: 30%; }
+  .features .swiper-slide .middleIcon-image.hypoallergenicIcon { left: 46%; }
+
+  .features .swiper-slide .middleIcon-image.soft-and-safe {
+    bottom: 30%;
+    left: 47%;
+  }
+
+  .features .swiper-slide .middleIcon-image.tablet-sizesIcon { top: 46%; }
 }
 
 /**********************************
   HOW DOES IT WORK
 ***********************************/
 .howDoesItWork {
-  padding-bottom: 285px;
   position: relative;
   padding-top: 62px;
   overflow: hidden;
@@ -1078,6 +1126,7 @@ nav .right img {
 }
 
 .verticalLine {
+  display: none;
   left: 840px;
   top: 424px;
 }
@@ -1098,20 +1147,12 @@ nav .right img {
   padding-bottom: 58px;
 }
 
-.howDoesItWork .grid {
-  grid-row-gap: 47px;
-  display: grid;
-}
-
-.howDoesItWork .grid .box {
-  grid-template-columns: 10% 30% 49%;
-  -ms-align-items: center;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-}
+.howDoesItWork .grid { text-align: center; }
 
 .box .pointImage { height: 83px; }
+
+.box.sensors,
+.box.learn { padding-bottom: 57px; }
 
 .box.sensors .stepImage {
   height: 221px;
@@ -1133,16 +1174,35 @@ nav .right img {
   left: 0;
 }
 
+@media (min-width: 992px) {
+  .howDoesItWork { padding-bottom: 285px; }
+
+  .verticalLine {
+    display: block;
+  }
+
+  .howDoesItWork .grid {
+    grid-row-gap: 47px;
+    text-align: left;
+    display: grid;
+  }
+
+  .howDoesItWork .grid .box {
+    grid-template-columns: 10% 30% 49%;
+    -ms-align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+}
+
 /**********************************
   MEET OCTOBO'S FRIENDS
 ***********************************/
 .meet-friends {
-  display: -webkit-flex;
   padding-bottom: 164px;
   position: relative;
   padding-top: 107px;
-  display: -ms-flex;
-  display: flex;
 }
 
 .meet-friends .hex {
@@ -1150,88 +1210,17 @@ nav .right img {
   right: 0;
 }
 
-.meet-friends .content {
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 34px;
-  display: inline-grid;
-}
+.meet-friends .friends-content { text-align: center; }
+.meet-friends .friends-images { padding-top: 44px; }
 
-.meet-friends .content .friends-content h1 { padding-bottom: 0; }
+@media(min-width: 768px) {
+  .meet-friends .friends-images img { height: 300px; }
+  .meet-friends .friends-content { text-align: left; }
 
-.meet-friends .content .friends-content p {
-  margin-top: -10px;
-  width: 378px;
-}
-
-.meet-friends .content .friends-images {
-  grid-template-columns: 35% 35%;
-  grid-template-rows: 58% 67%;
-  display: inline-grid;
-  position: relative;
-}
-
-.meet-friends .content .friends-images .arely .inner,
-.meet-friends .content .friends-images .cassie .inner,
-.meet-friends .content .friends-images .peiyu .inner,
-.meet-friends .content .friends-images .zane .inner {
-  position: relative;
-  font-style: italic;
-}
-
-.meet-friends .content .friends-images .cassie p,
-.meet-friends .content .friends-images .peiyu p,
-.meet-friends .content .friends-images .zane p,
-.meet-friends .content .friends-images .peiyu img,
-.meet-friends .content .friends-images .zane img {
-  position: absolute;
-}
-
-.meet-friends .content .friends-images .cassie p,
-.meet-friends .content .friends-images .arely p,
-.meet-friends .content .friends-images .peiyu p,
-.meet-friends .content .friends-images .zane p {
-  margin: 0;
-}
-
-.meet-friends .content .friends-images .arely img {
-  height: 129px;
-  width: 152px;
-}
-
-.meet-friends .content .friends-images .arely p {
-  text-align: center;
-}
-
-.meet-friends .content .friends-images .cassie img {
-  height: 143px;
-  width: 133px;
-}
-
-.meet-friends .content .friends-images .cassie p {
-  bottom: 2%;
-  left: 5%;
-}
-
-.meet-friends .content .friends-images .peiyu img {
-  height: 150px;
-  width: 128px;
-  left: -13%;
-}
-
-.meet-friends .content .friends-images .peiyu p {
-  bottom: -150px;
-  left: -9%;
-}
-
-.meet-friends .content .friends-images .zane img {
-  height: 163px;
-  width: 172px;
-  left: -35%;
-}
-
-.meet-friends .content .friends-images .zane p {
-  right: 50%;
-  top: 17px;
+  .meet-friends .content {
+    grid-template-columns: 50% 50%;
+    display: grid;
+  }
 }
 
 /**********************************
