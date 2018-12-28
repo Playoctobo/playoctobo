@@ -35,6 +35,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'galano_grotesque_demobold', sans-serif;
   color: var(--back);
   line-height: 48px;
   font-weight: 900;
