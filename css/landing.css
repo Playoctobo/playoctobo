@@ -8,6 +8,7 @@
 
 :root {
   --lightBlueOpacity: rgba(137, 216, 248, 0.2);
+  --lightPurple: #d5b5e3;
   --lightBlue: #89d8f8;
   --darkBlue: #1A2D45;
   --yellow: #f8d51d;
@@ -42,7 +43,10 @@ h4,
 h5,
 h6,
 p,
-a { color: var(--darkBlue);}
+a {
+  color: var(--darkBlue);
+  margin: 0;
+}
 
 h1,
 h2,
@@ -149,13 +153,13 @@ img {
 
 .btn:hover { box-shadow: none; }
 
-/** Modal **/
+/** Modals **/
 .popup {
   -webkit-transition: opacity  0.35s ease;
+  background-color: rgba(0,0,0, 0.75);
   -moz-transition: opacity 0.35s ease;
   -o-transition: opacity 0.35s ease;
   transition: opacity 0.35s ease;
-  background: rgba(0,0,0, 0.75);
   justify-content: center;
   -ms-align-items: center;
   display: -webkit-flex;
@@ -201,6 +205,52 @@ img {
   height: 100%;
   width: 100%;
   left: 0;
+}
+
+/* Swiper slider */
+.swiper-slide {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -ms-align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  align-items: center;
+  position: relative;
+  display: -ms-flex;
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  height: 10px;
+  width: 10px;
+}
+
+/* Videos */
+.video {
+  -ms-align-items: center;
+  display: -webkit-flex;
+  align-items: center;
+  position: relative;
+  display: -ms-flex;
+  display: flex;
+}
+
+.video a {
+  position: absolute;
+  height: 63px;
+  width: 53px;
+  left: 46%;
+}
+
+@media (min-width: 768px) {
+  .video a { left: 50%; }
+}
+
+@media (min-width: 992px) {
+  .video img:nth-child(1) {
+    position: relative;
+    height: inherit;
+  }
 }
 
 /**********************************
@@ -338,22 +388,6 @@ nav .right img {
 ***********************************/
 .product-press { padding-bottom: 100px; }
 
-.video {
-  -ms-align-items: center;
-  display: -webkit-flex;
-  align-items: center;
-  position: relative;
-  display: -ms-flex;
-  display: flex;
-}
-
-.video a {
-  position: absolute;
-  height: 63px;
-  width: 53px;
-  left: 44%;
-}
-
 .bar {
   background-color: var(--green);
   grid-template-columns: 40% 40%;
@@ -379,8 +413,6 @@ nav .right img {
     grid-template-rows: 100%;
     padding: 24px;
   }
-
-  .video a { left: 50%; }
 }
 
 @media (min-width: 992px) {
@@ -399,9 +431,7 @@ nav .right img {
     display: flex;
   }
 
-  .video img:nth-child(1) {
-    position: relative;
-    height: inherit;
+  .product-press .video img:nth-child(1) {
     width: 620px;
   }
 }
@@ -1048,21 +1078,9 @@ nav .right img {
 .features { padding: 20px 23px 32px 23px; }
 .swiper-container { text-align: center; }
 
-.features .swiper-container {
+.swiper-container {
   height: 100%;
   width: 100%;
-}
-
-.swiper-slide {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -ms-align-items: center;
-  flex-direction: column;
-  display: -webkit-flex;
-  align-items: center;
-  position: relative;
-  display: -ms-flex;
-  display: flex;
 }
 
 .features .swiper-slide .middlePlush-image {
@@ -1103,12 +1121,7 @@ nav .right img {
 }
 
 .features .swiper-slide .text h2 { color: var(--blue); }
-.swiper-pagination-bullet { background: var(--blue); }
-
-.swiper-pagination-bullet {
-  height: 10px;
-  width: 10px;
-}
+.features .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
 
 @media (min-width: 375px) {
   .features .swiper-slide .middlePlush-image {
@@ -1195,22 +1208,26 @@ nav .right img {
 }
 
 .verticalLine {
+  position: relative;
   display: none;
-  left: 840px;
-  top: 424px;
+  height: 900px;
+  left: 111px;
+  top: 0;
 }
 
 .top-line {
-  border-left: 4px solid var(--green);
+  border-left: 4px solid rgba(0, 204, 90, 0.3);
   position: absolute;
-  height: 80px;
-  z-index: -1;
+  height: 900px;
+  z-index: 1;
 }
 
 #mySVG {
-  position: absolute;
-  z-index: -2;
+  height: 900px;
+  z-index: -1;
 }
+
+svg line { stroke: green; }
 
 .howDoesItWork .header h1 {
   padding-bottom: 58px;
@@ -1222,6 +1239,11 @@ nav .right img {
 
 .box.sensors,
 .box.learn { padding-bottom: 57px; }
+
+.box.development .btn {
+  margin-bottom: 31px;
+  margin-top: 24px;
+}
 
 .box.sensors .stepImage {
   height: 221px;
@@ -1266,12 +1288,77 @@ nav .right img {
 }
 
 /**********************************
+  Testimonials
+***********************************/
+.testimonials .header {
+  background-color: var(--purple);
+  text-align: center;
+}
+
+.testimonials .header h1 { color: var(--white); }
+
+.mobile .testimonials .header {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.mobile .testimonials .slider,
+.mobile .testimonials .swiper-container .swiper-slider {
+  background-color: var(--lightPurple);
+}
+
+.mobile .testimonials .swiper-container img {
+  padding-top: 24px;
+  height: 93px;
+}
+
+.mobile .testimonials .swiper-container p,
+.mobile .testimonials .swiper-container h3 { width: 305px;}
+
+.mobile .testimonials .swiper-container p {
+  padding-bottom: 16px;
+  padding-top: 19px;
+}
+
+.mobile .testimonials .swiper-container h3 {
+  padding-bottom: 60px;
+  line-height: 21px;
+  padding-top: 0;
+}
+
+.mobile .testimonials .swiper-pagination .swiper-pagination-bullet { background-color: var(--white); }
+
+@media (min-width: 992px) {
+  .desktop .testimonials {
+    background-color: var(--lightPurple);
+    height: 720px;
+  }
+
+  .testimonials .header {
+    padding: 87px 44px;
+  }
+
+  .desktop .testimonials .video {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: -50%;
+  }
+
+  .desktop .testimonials .other-content .slider,
+  .desktop .testimonials .other-content .swiper-container .swiper-slider {
+    background-color: var(--white);
+  }
+
+  .desktop .testimonials .other-content .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
+}
+
+/**********************************
   MEET OCTOBO'S FRIENDS
 ***********************************/
 .meet-friends {
   padding-bottom: 31px;
   position: relative;
-  padding-top: 81px;
 }
 
 .meet-friends .hex {
@@ -1279,6 +1366,7 @@ nav .right img {
   right: 0;
 }
 
+.meet-friends .friends-content h1 { padding-top: 32px; }
 .meet-friends .friends-content { text-align: center; }
 
 .meet-friends .friends-images {
@@ -1297,6 +1385,11 @@ nav .right img {
   }
 
   .meet-friends .btn { display: none; }
+}
+
+@media (min-width: 992px) {
+  .meet-friends { padding-top: 107px; }
+  .meet-friends .friends-content h1 { padding-top: 0; }
 }
 
 /**********************************
