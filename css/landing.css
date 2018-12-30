@@ -1207,27 +1207,7 @@ nav .right img {
   right: 0;
 }
 
-.verticalLine {
-  position: relative;
-  display: none;
-  height: 900px;
-  left: 111px;
-  top: 0;
-}
-
-.top-line {
-  border-left: 4px solid rgba(0, 204, 90, 0.3);
-  position: absolute;
-  height: 900px;
-  z-index: 1;
-}
-
-#mySVG {
-  height: 900px;
-  z-index: -1;
-}
-
-svg line { stroke: green; }
+.verticalLine { display: none; }
 
 .howDoesItWork .header h1 {
   padding-bottom: 58px;
@@ -1239,11 +1219,6 @@ svg line { stroke: green; }
 
 .box.sensors,
 .box.learn { padding-bottom: 57px; }
-
-.box.development .btn {
-  margin-bottom: 31px;
-  margin-top: 24px;
-}
 
 .box.sensors .stepImage {
   height: 221px;
@@ -1265,12 +1240,31 @@ svg line { stroke: green; }
   left: 0;
 }
 
+.howDoesItWork .btn {
+  margin-bottom: 31px;
+  margin-top: 24px;
+}
+
 @media (min-width: 992px) {
-  .howDoesItWork { padding-bottom: 285px; }
+  .howDoesItWork { margin-bottom: 475px; }
 
   .verticalLine {
+    position: absolute;
     display: block;
+    height: 900px;
+    z-index: -1;
+    left: 110px;
+    top: 221px;
   }
+
+  .top-line {
+    border-left: 4px solid rgba(0, 204, 90, 0.3);
+    position: absolute;
+    height: 900px;
+    z-index: 1;
+  }
+
+  svg line { stroke: green; }
 
   .howDoesItWork .grid {
     grid-row-gap: 47px;
@@ -1285,6 +1279,12 @@ svg line { stroke: green; }
     align-items: center;
     display: grid;
   }
+
+  .howDoesItWork .btn { display: none; }
+}
+
+@media (min-width: 1440px) {
+  .verticalLine { left: 129px; }
 }
 
 /**********************************
@@ -1297,6 +1297,17 @@ svg line { stroke: green; }
 
 .testimonials .header h1 { color: var(--white); }
 
+.testimonials .swiper-container h3 {
+  padding-bottom: 60px;
+  line-height: 21px;
+  padding-top: 0;
+}
+
+.testimonials .swiper-container p {
+  padding-bottom: 16px;
+  padding-top: 19px;
+}
+
 .mobile .testimonials .header {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -1307,50 +1318,74 @@ svg line { stroke: green; }
   background-color: var(--lightPurple);
 }
 
-.mobile .testimonials .swiper-container img {
+.testimonials .swiper-container img {
   padding-top: 24px;
   height: 93px;
 }
 
 .mobile .testimonials .swiper-container p,
-.mobile .testimonials .swiper-container h3 { width: 305px;}
-
-.mobile .testimonials .swiper-container p {
-  padding-bottom: 16px;
-  padding-top: 19px;
-}
-
-.mobile .testimonials .swiper-container h3 {
-  padding-bottom: 60px;
-  line-height: 21px;
-  padding-top: 0;
-}
+.mobile .testimonials .swiper-container h3 { width: 305px; }
 
 .mobile .testimonials .swiper-pagination .swiper-pagination-bullet { background-color: var(--white); }
 
 @media (min-width: 992px) {
-  .desktop .testimonials {
+  .testimonials {
     background-color: var(--lightPurple);
     height: 720px;
   }
 
-  .testimonials .header {
-    padding: 87px 44px;
-  }
-
-  .desktop .testimonials .video {
+  .testimonials .video {
     position: absolute;
     width: 100%;
     z-index: 0;
     top: -50%;
   }
 
-  .desktop .testimonials .other-content .slider,
-  .desktop .testimonials .other-content .swiper-container .swiper-slider {
+  .testimonials .header {
+    padding: 87px 44px;
+    z-index: 1;
+  }
+
+  .testimonials .other-content {
+    grid-template-columns: 46.5% 40%;
+    justify-content: center;
+    -ms-align-items: center;
+    padding-bottom: 40px;
+    display: inline-grid;
+    align-items: center;
+    margin-top: 180px;
+  }
+
+  .testimonials .other-content .slider { overflow: hidden; }
+
+  .testimonials .other-content .slider .slider-content {
+    height: 310px;
+    width: 450px;
+  }
+
+  .testimonials .other-content .swiper-container .swiper-slider,
+  .testimonials .other-content .slider .slider-content {
     background-color: var(--white);
   }
 
-  .desktop .testimonials .other-content .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
+  .testimonials .other-content .slider .slider-content p,
+  .testimonials .other-content .slider .slider-content h3 {
+    width: 305px;
+    margin: auto;
+  }
+
+  .testimonials .other-content .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
+
+  .testimonials .btn {
+    width: 321px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonials .other-content {
+    grid-template-columns: 40.5% 37%;
+  }
 }
 
 /**********************************

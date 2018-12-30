@@ -774,8 +774,8 @@
     <section class="container grid">
       <section class="verticalLine">
         <section class="top-line"></section>
-        <svg id="mySVG" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0" y1="0" x2="0" y2="100" stroke-width="1.2" id="line" />
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="0" y2="100" stroke-width="1.2" />
         </svg>
       </section>
 
@@ -818,10 +818,10 @@
           <p>Along with encouraging cooperation and physical exercise with stories and mini-games, Octobo’s “operating system” mimics healthy social relationships. For example: the Parent Portal offers key features like time limits. But rather than a simple countdown, Octobo tells your child “I’m feeling tired and need to rest now. Let’s play again later!”
 
           By modeling forthright speech about feelings and needs, Octobo helps your child learn to identify and express their feelings and needs as they navigate their own social environments.</p>
-
-          <a href="https://shop.trycelery.com/page/5bf8be5e33ce8313001185de" target="_blank" class="btn">Pre-Order Now</a>
         </section>
       </section>
+
+      <a href="https://shop.trycelery.com/page/5bf8be5e33ce8313001185de" target="_blank" class="btn mobile">Pre-Order Now</a>
     </section>
   </section>
 
@@ -881,21 +881,27 @@
             <section class="swiper-container">
               <section class="swiper-wrapper">
                 <section class="swiper-slide">
-                  <img src="./images/testimonialImg1.png" alt="Testimonials image">
-                  <p>“It (Octobo) can adapt to kids of multiple ages...as a parent we will love, because it's buying one thing that can last for years.”</p>
-                  <h3>Connie, Mother of 4-year-old boy and 1-year-old boy</h3>
+                  <section class="slider-content">
+                    <img src="./images/testimonialImg1.png" alt="Testimonials image">
+                    <p>“It (Octobo) can adapt to kids of multiple ages...as a parent we will love, because it's buying one thing that can last for years.”</p>
+                    <h3>Connie, Mother of 4-year-old boy and 1-year-old boy</h3>
+                  </section>
                 </section>
 
                 <section class="swiper-slide">
-                  <img src="./images/testimonialImg2.png" alt="Testimonials image">
-                  <p>“I love how interactive he is! There's so many different parts: the books, the chips, the cards...I love that it's a plush, which makes me feel a lot more safe.”</p>
-                  <h3>Allsun, Mother of 2-year-old boy</h3>
+                  <div class="slider-content">
+                    <img src="./images/testimonialImg2.png" alt="Testimonials image">
+                    <p>“I love how interactive he is! There's so many different parts: the books, the chips, the cards...I love that it's a plush, which makes me feel a lot more safe.”</p>
+                    <h3>Allsun, Mother of 2-year-old boy</h3>
+                  </div>
                 </section>
 
                 <section class="swiper-slide">
-                  <img src="./images/testimonialImg3.png" alt="Testimonials image">
-                  <p>“It's so much fun, not only reading but you can touch it and feel it. That's so much fun!”</p>
-                  <h3>Kaori, Mother of 2.5-year-old girl</h3>
+                  <div class="slider-content">
+                    <img src="./images/testimonialImg3.png" alt="Testimonials image">
+                    <p>“It's so much fun, not only reading but you can touch it and feel it. That's so much fun!”</p>
+                    <h3>Kaori, Mother of 2.5-year-old girl</h3>
+                  </div>
                 </section>
               </section>
               <!-- Add Pagination -->
@@ -964,9 +970,9 @@
   <script>AOS.init();</script>
   <script>
     var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
+      pagination: { el: '.swiper-pagination' },
+      centeredSlides: true,
+      paginationClickable: true
     });
   </script>
 </body>
