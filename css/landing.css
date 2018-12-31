@@ -1185,7 +1185,10 @@ nav .right img {
     left: 47%;
   }
 
-  .features .swiper-slide .middleIcon-image.tablet-sizesIcon { top: 46%; }
+  .features .swiper-slide .middleIcon-image.tablet-sizesIcon {
+    left: 47%;
+    top: 56%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1200,6 +1203,7 @@ nav .right img {
   .features .desktop .images .operating-system-image,
   .features .desktop .images .batteries-image,
   .features .desktop .images .hypoallergenic-image,
+  .features .desktop .images .compTablet-image,
   .features .desktop .images .genuine-personality-image,
   .features .desktop .images .size-image,
   .features .desktop .images .soft-and-safe-image,
@@ -1223,6 +1227,7 @@ nav .right img {
   .features .desktop .operating-system,
   .features .desktop .batteries,
   .features .desktop .hypoallergenic,
+  .features .desktop .compTablet,
   .features .desktop .genuine-personality,
   .features .desktop .size,
   .features .desktop .soft-and-safe,
@@ -1234,6 +1239,7 @@ nav .right img {
   .features .desktop .images .operating-system-image,
   .features .desktop .images .batteries-image,
   .features .desktop .images .hypoallergenic-image,
+  .features .desktop .images .compTablet-image,
   .features .desktop .images .genuine-ersonality-image,
   .features .desktop .images .soft-and-safe-image,
   .features .desktop .images .expanding-app-image,
@@ -1241,6 +1247,7 @@ nav .right img {
   .features .desktop .highly-interactive .hover,
   .features .desktop .batteries .hover,
   .features .desktop .hypoallergenic .hover,
+  .features .desktop .compTablet .hover,
   .features .desktop .genuine-personality .hover,
   .features .desktop .size .hover,
   .features .desktop .soft-and-safe .hover,
@@ -1253,6 +1260,7 @@ nav .right img {
   .features .desktop .batteries .text,
   .features .desktop .hypoallergenic .text,
   .features .desktop .genuine-personality .text,
+  .features .desktop .compTablet .text,
   .features .desktop .size .text,
   .features .desktop .soft-and-safe .text,
   .features .desktop .expanding-app .text {
@@ -1265,6 +1273,7 @@ nav .right img {
   .features .desktop .operating-system .text h2,
   .features .desktop .batteries .text h2,
   .features .desktop .hypoallergenic .text h2,
+  .features .desktop .compTablet .text h2,
   .features .desktop .genuine-personality .text h2,
   .features .desktop .size .text h2,
   .features .desktop .soft-and-safe .text h2,
@@ -1278,6 +1287,7 @@ nav .right img {
   .features .desktop .operating-system .hover,
   .features .desktop .batteries .hover
   .features .desktop .hypoallergenic .hover,
+  .features .desktop .compTablet .hover,
   .features .desktop .genuine-personality .hover,
   .features .desktop .size .hover,
   .features .desktop .soft-and-safe .hover,
@@ -1290,6 +1300,7 @@ nav .right img {
   .features .desktop .batteries .hover,
   .features .desktop .hypoallergenic .hover,
   .features .desktop .genuine-personality .hover,
+  .features .desktop .compTablet .hover,
   .features .desktop .size .hover,
   .features .desktop .soft-and-safe .hover,
   .features .desktop .expanding-app .hover {
@@ -1306,8 +1317,8 @@ nav .right img {
 
   /** highly interactive **/
   .features .desktop .highly-interactive {
-    bottom: 21%;
-    left: 2%;
+    bottom: 28%;
+    left: -3%;
   }
 
   .features .desktop .highly-interactive .icon {
@@ -1339,8 +1350,8 @@ nav .right img {
 
   /** batteries **/
   .features .desktop .batteries {
-    top: 30%;
-    left: 6%;
+    top: 35.5%;
+    left: 4%;
   }
 
   .features .desktop .batteries .icon {
@@ -1361,10 +1372,29 @@ nav .right img {
     top: -5%;
   }
 
+  /** compatible tablet sizes **/
+  .features .desktop .compTablet {
+    left: 37%;
+    top: 7%;
+  }
+
+  .features .desktop .images .compTablet-image { left: 22%; }
+
+  .features .desktop .compTablet .hover {
+    margin-top: -44px;
+    padding: 0;
+  }
+
+  .features .desktop .compTablet .icon {
+    position: absolute;
+    left: 36%;
+    top: 184%;
+  }
+
   /** genuine-personality **/
   .features .desktop .genuine-personality {
-    right: 0;
-    top: 15%;
+    right: 2%;
+    top: 14%;
   }
 
   .features .desktop .genuine-personality .icon {
@@ -1375,8 +1405,8 @@ nav .right img {
 
   /** size **/
   .features .desktop .size {
-    right: -11%;
-    top: 29%;
+    right: -13.5%;
+    top: 34%;
   }
 
   .features .desktop .size .icon {
@@ -1385,18 +1415,10 @@ nav .right img {
     top: -23%;
   }
 
-  .features .desktop .btn {
-    position: absolute;
-    width: 321px;
-    margin: auto;
-    bottom: 6%;
-    left: 34%;
-  }
-
   /** soft and padding **/
   .features .desktop .soft-and-safe {
-    right: -8%;
-    top: 50%;
+    right: -8.5%;
+    top: 46%;
   }
 
   .features .desktop .soft-and-safe .hover {
@@ -1411,8 +1433,8 @@ nav .right img {
 
   /** expanding app library **/
   .features .desktop .expanding-app {
-    right: 2%;
-    bottom: 22%;
+    bottom: 28%;
+    right: -3%;
   }
 
   .features .desktop .expanding-app .hover {
@@ -1424,6 +1446,14 @@ nav .right img {
     bottom: 80%;
     right: 108%;
   }
+
+  .features .desktop .btn {
+    position: absolute;
+    width: 321px;
+    margin: auto;
+    bottom: 6%;
+    left: 34%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1432,6 +1462,7 @@ nav .right img {
   .features .desktop .images .operating-system-image,
   .features .desktop .images .batteries-image,
   .features .desktop .images .hypoallergenic-image,
+  .features .desktop .images .comp-Tablet-image,
   .features .desktop .images .genuine-personality-image,
   .features .desktop .images .size-image,
   .features .desktop .images .soft-and-safe-image,
@@ -1451,7 +1482,7 @@ nav .right img {
     padding-top: 30px;
   }
 
-  .features .desktop .highly-interactive { left: 10%; }
+  .features .desktop .highly-interactive { left: 5%; }
   .features .desktop .operating-system { left: 0; }
 
   .features .desktop .operating-system .icon {
@@ -1459,19 +1490,22 @@ nav .right img {
     top: -7%;
   }
 
-  .features .desktop .batteries { left: 12%; }
+  .features .desktop .batteries { left: 10%; }
   .features .desktop .batteries .icon { left: 69%; }
 
-  .features .desktop .hypoallergenic { left: 20%; }
-  .features .desktop .genuine-personality { right: 9%; }
-  .features .desktop .size { right: -1%; }
+  .features .desktop .hypoallergenic { left: 18%; }
+  .features .desktop .genuine-personality { right: 10%; }
+  .features .desktop .size { right: -3%; }
+
+  .features .desktop .compTablet { left: 39%; }
+  .features .desktop .images .compTablet-image { left: 27%; }
 
   .features .desktop .soft-and-safe {
-    right: -6.4%;
-    top: 52.5%;
+    right: -6.5%;
+    top: 50%;
   }
 
-  .features .desktop .expanding-app { right: 2%; }
+  .features .desktop .expanding-app { right: -2%; }
   .features .desktop .expanding-app .icon { bottom: 68%; }
 
   .features .desktop .btn { left: 36%; }

@@ -1,3 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="636" height="636" viewBox="0 0 636 636">
-    <circle cx="322" cy="321" r="317" fill="none" fill-rule="nonzero" stroke="#15D4EF" stroke-linecap="round" stroke-width="1.6" transform="translate(-4 -3)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="643px" height="639px" viewBox="0 0 643 639" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PlayOctobo-UI-Final" transform="translate(-382.000000, -6444.000000)">
+            <g id="Features-Circle" transform="translate(172.000000, 6404.000000)">
+                <g id="Circle" transform="translate(210.000000, 40.000000)">
+                    <g id="Product-Photo-Copy">
+                        <g id="Static" fill-rule="nonzero">
+                            <circle id="Oval-Copy-3" stroke="#15D4EF" stroke-width="1.5999999" stroke-linecap="round" cx="322" cy="321" r="317"></circle>
+                            <circle id="Oval" fill="#15D4EF" cx="453" cy="32" r="5"></circle>
+                            <circle id="Oval" fill="#15D4EF" cx="638" cy="306" r="5"></circle>
+                            <circle id="Oval-Copy" fill="#15D4EF" cx="608" cy="183" r="5"></circle>
+                            <circle id="Oval" fill="#15D4EF" cx="588" cy="492" r="5"></circle>
+                            <circle id="Oval" fill="#15D4EF" cx="171" cy="42" r="5"></circle>
+                            <circle id="Oval-Copy-8" fill="#15D4EF" cx="30" cy="198" r="5"></circle>
+                            <circle id="Oval" fill="#15D4EF" cx="5" cy="324" r="5"></circle>
+                            <circle id="Oval-Copy-7" fill="#15D4EF" cx="50" cy="483" r="5"></circle>
+                            <circle id="Oval" fill="#15D4EF" cx="309" cy="5" r="5"></circle>
+                        </g>
+                        <g id="Feature-1" transform="translate(640.000000, 169.000000)"></g>
+                        <g id="Feature-1-Copy" transform="translate(633.000000, 301.000000)"></g>
+                        <g id="Feature-1-Copy-5" transform="translate(603.000000, 178.000000)"></g>
+                        <g id="Feature-1-Copy-7" transform="translate(583.000000, 487.000000)"></g>
+                        <g id="Feature-1-Copy-2" transform="translate(166.000000, 37.000000)"></g>
+                        <g id="Feature-1-Copy-8" transform="translate(25.000000, 193.000000)"></g>
+                        <g id="Feature-1-Copy-3" transform="translate(0.000000, 319.000000)"></g>
+                        <g id="Feature-1-Copy-4" transform="translate(304.000000, 0.000000)"></g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

@@ -1,4 +1,6 @@
 let current = null;
+let line = document.getElementById("line");
+let length = line.getTotalLength();
 
 $(document).ready(function() {
   // product feature tabs
@@ -29,6 +31,8 @@ $(document).ready(function() {
     $(this).addClass('active')
            .siblings('.active').removeClass('active');
   });
+
+  // line Scroll
 
   // product features
 
@@ -89,6 +93,21 @@ $(document).ready(function() {
     $('.hover', this).hide();
     $('h2', this).css('color', '#1A2D45');
     $('.hypoallergenic-image').hide();
+    $('.main-image').show();
+  });
+
+  // compatible tablet sizes
+  $('.compTablet').mouseenter( function() {
+    $('.compTablet-image').show();
+    $('h2', this).css('color', '#15d4ef');
+    $('.main-image').hide();
+    $('.hover', this).show();
+  });
+
+  $('.compTablet').mouseleave( function() {
+    $('.hover', this).hide();
+    $('h2', this).css('color', '#1A2D45');
+    $('.compTablet-image').hide();
     $('.main-image').show();
   });
 
