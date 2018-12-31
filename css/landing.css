@@ -454,6 +454,7 @@ nav .right img {
 .product-features .feature-tabs > li {
   transition: border 0.4s;
   margin-bottom: 10px;
+  font-weight: 900;
   list-style: none;
 }
 
@@ -1482,7 +1483,6 @@ nav .right img {
 .howDoesItWork {
   position: relative;
   padding-top: 62px;
-  overflow: hidden;
 }
 
 .howDoesItWork .yellowHex,
