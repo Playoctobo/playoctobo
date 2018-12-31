@@ -1551,7 +1551,7 @@ nav .right img {
   .verticalLine {
     position: absolute;
     display: block;
-    height: 840px;
+    height: 930px;
     z-index: -1;
     left: 110px;
     top: 221px;
@@ -1560,11 +1560,11 @@ nav .right img {
   .top-line {
     border-left: 4px solid rgba(0, 204, 90, 0.3);
     position: absolute;
-    height: 840px;
+    height: 930px;
     z-index: 1;
   }
 
-  svg line { stroke: green; }
+  svg line { stroke: var(--green); }
 
   .howDoesItWork .grid {
     grid-row-gap: 47px;
@@ -1585,6 +1585,11 @@ nav .right img {
 
 @media (min-width: 1440px) {
   .verticalLine { left: 129px; }
+
+  .verticalLine,
+  .top-line {
+    height: 840px;
+  }
 }
 
 /**********************************
