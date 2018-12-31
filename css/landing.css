@@ -1056,7 +1056,7 @@ nav .right img {
   }
 
   .made-by .made-by-grid {
-    grid-template-columns: 27% 32%;
+    grid-template-columns: 17% 22%;
     justify-content: center;
     grid-column-gap: 65px;
     text-align: left;
@@ -1168,6 +1168,15 @@ nav .right img {
 }
 
 @media (min-width: 768px) {
+  .features { position: relative; }
+
+  .features .desktop .hex {
+    position: absolute;
+    z-index: -1;
+    top: -20%;
+    left: 0;
+  }
+
   .features .swiper-slide .middlePlush-image {
     left: 30%;
   }
