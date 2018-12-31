@@ -1486,7 +1486,8 @@ nav .right img {
 }
 
 .howDoesItWork .yellowHex,
-.howDoesItWork .greenHex {
+.howDoesItWork .greenHex,
+.howDoesItWork .greenHexMobile {
   position: absolute;
   z-index: -1;
 }
@@ -1499,6 +1500,11 @@ nav .right img {
 .howDoesItWork .greenHex {
   bottom: 0;
   left: 0;
+}
+
+.howDoesItWork .greenHexMobile {
+  top: 39%;
+  right: 0;
 }
 
 .verticalLine { display: none; }
