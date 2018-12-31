@@ -1187,6 +1187,295 @@ nav .right img {
   .features .swiper-slide .middleIcon-image.tablet-sizesIcon { top: 46%; }
 }
 
+@media (min-width: 992px) {
+  .features .desktop .inner_content {
+    padding-bottom: 62px;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .features .desktop .inner_content img.main-image,
+  .features .desktop .images .highly-interactive-image,
+  .features .desktop .images .operating-system-image,
+  .features .desktop .images .batteries-image,
+  .features .desktop .images .hypoallergenic-image,
+  .features .desktop .images .genuine-personality-image,
+  .features .desktop .images .size-image,
+  .features .desktop .images .soft-and-safe-image,
+  .features .desktop .images .expanding-app-image {
+    position: absolute;
+    height: 468px;
+    left: 19%;
+    top: 20%;
+  }
+
+  /* .features .desktop .inner_content p {
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    width: 100%;
+    bottom: 17%;
+    left: -1%;
+  } */
+
+  .features .desktop .highly-interactive,
+  .features .desktop .operating-system,
+  .features .desktop .batteries,
+  .features .desktop .hypoallergenic,
+  .features .desktop .genuine-personality,
+  .features .desktop .size,
+  .features .desktop .soft-and-safe,
+  .features .desktop .expanding-app {
+    position: absolute;
+  }
+
+  .features .desktop .images .highly-interactive-image,
+  .features .desktop .images .operating-system-image,
+  .features .desktop .images .batteries-image,
+  .features .desktop .images .hypoallergenic-image,
+  .features .desktop .images .genuine-ersonality-image,
+  .features .desktop .images .soft-and-safe-image,
+  .features .desktop .images .expanding-app-image,
+  .features .desktop .operating-system .hover,
+  .features .desktop .highly-interactive .hover,
+  .features .desktop .batteries .hover,
+  .features .desktop .hypoallergenic .hover,
+  .features .desktop .genuine-personality .hover,
+  .features .desktop .size .hover,
+  .features .desktop .soft-and-safe .hover,
+  .features .desktop .expanding-app .hover {
+    display: none;
+  }
+
+  .features .desktop .highly-interactive .text,
+  .features .desktop .operating-system .text,
+  .features .desktop .batteries .text,
+  .features .desktop .hypoallergenic .text,
+  .features .desktop .genuine-personality .text,
+  .features .desktop .size .text,
+  .features .desktop .soft-and-safe .text,
+  .features .desktop .expanding-app .text {
+    position: relative;
+    text-align: left;
+    width: 258px;
+  }
+
+  .features .desktop .highly-interactive .text h2,
+  .features .desktop .operating-system .text h2,
+  .features .desktop .batteries .text h2,
+  .features .desktop .hypoallergenic .text h2,
+  .features .desktop .genuine-personality .text h2,
+  .features .desktop .size .text h2,
+  .features .desktop .soft-and-safe .text h2,
+  .features .desktop .expanding-app .text h2 {
+    position: absolute;
+    padding-top: 0;
+    left: 0;
+  }
+
+  .features .desktop .highly-interactive .hover,
+  .features .desktop .operating-system .hover,
+  .features .desktop .batteries .hover
+  .features .desktop .hypoallergenic .hover,
+  .features .desktop .genuine-personality .hover,
+  .features .desktop .size .hover,
+  .features .desktop .soft-and-safe .hover,
+  .features .desktop .expanding-app .hover {
+    position: absolute;
+    text-align: left;
+  }
+
+  .features .desktop .highly-interactive .hover,
+  .features .desktop .batteries .hover,
+  .features .desktop .hypoallergenic .hover,
+  .features .desktop .genuine-personality .hover,
+  .features .desktop .size .hover,
+  .features .desktop .soft-and-safe .hover,
+  .features .desktop .expanding-app .hover {
+    padding-top: 30px;
+  }
+
+  .features .desktop .operating-system .text,
+  .features .desktop .batteries .text,
+  .features .desktop .hypoallergenic .text,
+  .features .desktop .soft-and-safe .text,
+  .features .desktop .expanding-app .text {
+    width: 180px;
+  }
+
+  /** highly interactive **/
+  .features .desktop .highly-interactive {
+    bottom: 21%;
+    left: 2%;
+  }
+
+  .features .desktop .highly-interactive .icon {
+    position: absolute;
+    bottom: 74%;
+    left: 75%;
+  }
+
+  /** operating system **/
+  .features .desktop .operating-system {
+    top: 50%;
+    left: 0;
+  }
+
+  .features .desktop .operating-system .hover {
+    padding-top: 60px;
+  }
+
+  .features .desktop .operating-system .icon {
+    position: absolute;
+    bottom: 74%;
+    left: 66%;
+  }
+
+  .features .desktop .operating-system .OS-logos {
+    margin: 10px;
+    height: 24px;
+  }
+
+  /** batteries **/
+  .features .desktop .batteries {
+    top: 30%;
+    left: 6%;
+  }
+
+  .features .desktop .batteries .icon {
+    position: absolute;
+    left: 61%;
+    top: -12%;
+  }
+
+  /** hypoallergenic **/
+  .features .desktop .hypoallergenic {
+    left: 13%;
+    top: 15%;
+  }
+
+  .features .desktop .hypoallergenic .icon {
+    position: absolute;
+    left: 96%;
+    top: -5%;
+  }
+
+  /** genuine-personality **/
+  .features .desktop .genuine-personality {
+    right: 0;
+    top: 15%;
+  }
+
+  .features .desktop .genuine-personality .icon {
+    position: absolute;
+    right: 109%;
+    top: -5%;
+  }
+
+  /** size **/
+  .features .desktop .size {
+    right: -11%;
+    top: 29%;
+  }
+
+  .features .desktop .size .icon {
+    position: absolute;
+    right: 112%;
+    top: -23%;
+  }
+
+  .features .desktop .btn {
+    position: absolute;
+    width: 321px;
+    margin: auto;
+    bottom: 6%;
+    left: 34%;
+  }
+
+  /** soft and padding **/
+  .features .desktop .soft-and-safe {
+    right: -8%;
+    top: 50%;
+  }
+
+  .features .desktop .soft-and-safe .hover {
+    padding-top: 60px;
+  }
+
+  .features .desktop .soft-and-safe .icon {
+    position: absolute;
+    bottom: 64%;
+    right: 108%;
+  }
+
+  /** expanding app library **/
+  .features .desktop .expanding-app {
+    right: 2%;
+    bottom: 22%;
+  }
+
+  .features .desktop .expanding-app .hover {
+    padding-top: 60px;
+  }
+
+  .features .desktop .expanding-app .icon {
+    position: absolute;
+    bottom: 80%;
+    right: 108%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features .desktop .inner_content img.main-image,
+  .features .desktop .images .highly-interactive-image,
+  .features .desktop .images .operating-system-image,
+  .features .desktop .images .batteries-image,
+  .features .desktop .images .hypoallergenic-image,
+  .features .desktop .images .genuine-personality-image,
+  .features .desktop .images .size-image,
+  .features .desktop .images .soft-and-safe-image,
+  .features .desktop .images .expanding-app-image {
+    left: 23%;
+  }
+
+  .features .desktop .operating-system .text,
+  .features .desktop .soft-and-safe .text,
+  .features .desktop .expanding-app .text {
+    width: 258px;
+  }
+
+  .features .desktop .operating-system .hover,
+  .features .desktop .soft-and-safe .hover,
+  .features .desktop .expanding-app .hover {
+    padding-top: 30px;
+  }
+
+  .features .desktop .highly-interactive { left: 10%; }
+  .features .desktop .operating-system { left: 0; }
+
+  .features .desktop .operating-system .icon {
+    left: 81%;
+    top: -7%;
+  }
+
+  .features .desktop .batteries { left: 12%; }
+  .features .desktop .batteries .icon { left: 69%; }
+
+  .features .desktop .hypoallergenic { left: 20%; }
+  .features .desktop .genuine-personality { right: 9%; }
+  .features .desktop .size { right: -1%; }
+
+  .features .desktop .soft-and-safe {
+    right: -6.4%;
+    top: 52.5%;
+  }
+
+  .features .desktop .expanding-app { right: 2%; }
+  .features .desktop .expanding-app .icon { bottom: 68%; }
+
+  .features .desktop .btn { left: 36%; }
+}
+
 /**********************************
   HOW DOES IT WORK
 ***********************************/
@@ -1205,6 +1494,11 @@ nav .right img {
 .howDoesItWork .yellowHex {
   top: -10%;
   right: 0;
+}
+
+.howDoesItWork .greenHex {
+  bottom: 0;
+  left: 0;
 }
 
 .verticalLine { display: none; }
@@ -1251,7 +1545,7 @@ nav .right img {
   .verticalLine {
     position: absolute;
     display: block;
-    height: 900px;
+    height: 840px;
     z-index: -1;
     left: 110px;
     top: 221px;
@@ -1260,7 +1554,7 @@ nav .right img {
   .top-line {
     border-left: 4px solid rgba(0, 204, 90, 0.3);
     position: absolute;
-    height: 900px;
+    height: 840px;
     z-index: 1;
   }
 
@@ -1376,6 +1670,7 @@ nav .right img {
     margin: auto;
   }
 
+  .testimonials .other-content .swiper-pagination { bottom: 20px; }
   .testimonials .other-content .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
 
   .testimonials .btn {
