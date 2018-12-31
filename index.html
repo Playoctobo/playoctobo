@@ -1102,10 +1102,18 @@
   <script src="./js/landing.js"></script>
   <script src="./js/swiper.min.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: { el: '.swiper-pagination' },
+  var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
       centeredSlides: true,
-      paginationClickable: true
+      effect: 'fade',
+      loop: true,
+
+      mousewheel: {
+        invert: false
+      }
     });
   </script>
 </body>
