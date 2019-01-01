@@ -1,6 +1,4 @@
 let current = null;
-let line = document.getElementById("line");
-let length = line.getTotalLength();
 
 $(document).ready(function() {
   // product feature tabs
@@ -33,12 +31,6 @@ $(document).ready(function() {
   });
 
   // scroll test
-  // $('.howDoesItWork').waypoint(function() {
-  //   $(".howDoesItWork .header").css({
-  //     background: 'yellow'
-  //   });
-  //   console.log('activate');
-  // }, { offset: 1000 });
 
   // product features
   $( ".feature" ).mouseenter(function() {

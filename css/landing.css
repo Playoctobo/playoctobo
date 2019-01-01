@@ -1171,7 +1171,6 @@ nav .right img {
 
   .features .desktop .hex {
     position: absolute;
-    z-index: -1;
     top: -20%;
     left: 0;
   }
@@ -1597,6 +1596,7 @@ nav .right img {
   .howDoesItWork { margin-bottom: 475px; }
 
   .verticalLine {
+    border-left: 2px solid var(--green);
     position: absolute;
     display: block;
     height: 930px;
@@ -1604,15 +1604,6 @@ nav .right img {
     left: 110px;
     top: 221px;
   }
-
-  .top-line {
-    border-left: 4px solid rgba(0, 204, 90, 0.3);
-    position: absolute;
-    height: 930px;
-    z-index: 1;
-  }
-
-  svg line { stroke: var(--green); }
 
   .howDoesItWork .grid {
     grid-row-gap: 47px;
