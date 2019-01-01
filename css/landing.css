@@ -1291,6 +1291,12 @@ nav .right img {
     left: 0;
   }
 
+  .feature .text .hover { display: none; }
+  .feature h2 { color: #1a2d45; }
+  .feature:hover h2 { color: #15d4ef; }
+  .feature:hover .text .hover { display: block; }
+  .images img { display: none; }
+
   .features .desktop .highly-interactive .hover,
   .features .desktop .operating-system .hover,
   .features .desktop .batteries .hover

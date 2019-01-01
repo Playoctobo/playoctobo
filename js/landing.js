@@ -32,142 +32,23 @@ $(document).ready(function() {
            .siblings('.active').removeClass('active');
   });
 
-  // line Scroll
+  // scroll test
+  // $('.howDoesItWork').waypoint(function() {
+  //   $(".howDoesItWork .header").css({
+  //     background: 'yellow'
+  //   });
+  //   console.log('activate');
+  // }, { offset: 1000 });
 
   // product features
-
-  // highly interactive
-  $('.highly-interactive').mouseenter( function() {
-    $('.highly-interactive-image').show();
-    $('h2', this).css('color', '#15d4ef');
+  $( ".feature" ).mouseenter(function() {
+    $("." + $(this).attr("feature") + "-image").show();
     $('.main-image').hide();
-    $('.hover', this).show();
   });
 
-  $('.highly-interactive').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.highly-interactive-image').hide();
-    $('.main-image').show();
-  });
-
-  // operating system
-  $('.operating-system').mouseenter( function() {
-    $('.operating-system-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.operating-system').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.operating-system-image').hide();
-    $('.main-image').show();
-  });
-
-  // batteries
-  $('.batteries').mouseenter( function() {
-    $('.batteries-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.batteries').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.batteries-image').hide();
-    $('.main-image').show();
-  });
-
-  // hypoallergenic
-  $('.hypoallergenic').mouseenter( function() {
-    $('.hypoallergenic-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.hypoallergenic').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.hypoallergenic-image').hide();
-    $('.main-image').show();
-  });
-
-  // compatible tablet sizes
-  $('.compTablet').mouseenter( function() {
-    $('.compTablet-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.compTablet').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.compTablet-image').hide();
-    $('.main-image').show();
-  });
-
-  // genuine personality
-  $('.genuine-personality').mouseenter( function() {
-    $('.genuine-personality-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.genuine-personality').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.genuine-personality-image').hide();
-    $('.main-image').show();
-  });
-
-  // size
-  $('.size').mouseenter( function() {
-    $('.size-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.size').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.size-image').hide();
-    $('.main-image').show();
-  });
-
-  // soft and safe
-  $('.soft-and-safe').mouseenter( function() {
-    $('.soft-and-safe-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.soft-and-safe').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.soft-and-safe-image').hide();
-    $('.main-image').show();
-  });
-
-  // expanding app
-  $('.expanding-app').mouseenter( function() {
-    $('.expanding-app-image').show();
-    $('h2', this).css('color', '#15d4ef');
-    $('.main-image').hide();
-    $('.hover', this).show();
-  });
-
-  $('.expanding-app').mouseleave( function() {
-    $('.hover', this).hide();
-    $('h2', this).css('color', '#1A2D45');
-    $('.expanding-app-image').hide();
+  // Add event for mouse leaving a feature
+  $( ".feature" ).mouseleave(function() {
+    $("." + $(this).attr("feature") + "-image").hide();
     $('.main-image').show();
   });
 });
