@@ -1595,13 +1595,15 @@ nav .right img {
 @media (min-width: 992px) {
   .howDoesItWork { margin-bottom: 475px; }
 
+  .howDoesItWork .greenHex img { height: 280px; }
+
   .verticalLine {
     border-left: 2px solid var(--green);
     position: absolute;
     display: block;
     height: 930px;
+    left: 113.4px;
     z-index: -1;
-    left: 110px;
     top: 221px;
   }
 
@@ -1623,21 +1625,21 @@ nav .right img {
 }
 
 @media (min-width: 1200px) {
-  .verticalLine,
-  .top-line {
-    height: 840px;
-  }
+  .howDoesItWork .greenHex img { height: 300px; }
 
-  .verticalLine { left: 130px; }
+  .verticalLine {
+    height: 840px;
+    left: 132.4px;
+  }
 }
 
 @media (min-width: 1440px) {
-  .verticalLine,
-  .top-line {
-    height: 840px;
-  }
+  .howDoesItWork .greenHex img { height: 470px; }
 
-  .verticalLine { left: 129px; }
+  .verticalLine {
+    height: 840px;
+    left: 132px;
+  }
 }
 
 /**********************************
