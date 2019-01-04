@@ -612,10 +612,7 @@ nav .right img {
 
 .pricing .top-image { z-index: 1; }
 
-.pricing .top-image img {
-  height: 292px;
-  width: 305px;
-}
+.pricing .top-image img { width: 305px; }
 
 .pricing__tables {
   margin-top: -60px;
