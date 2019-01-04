@@ -1868,6 +1868,8 @@ footer .social-links {
   display: flex;
 }
 
+footer .social-links img { height: 53px; }
+
 footer .social-links a { margin-right: 23px; }
 footer .social-links a:last-child { margin-right: 0; }
 

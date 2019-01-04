@@ -43,4 +43,32 @@ $(document).ready(function() {
     $("." + $(this).attr("feature") + "-image").hide();
     $('.main-image').show();
   });
+
+  // footer hover
+  $(".facebook img").hover(
+    function () {
+      $(this).attr("src","./images/facebook.png");
+    },
+    function () {
+      $(this).attr("src","./images/facebook.svg");
+    }
+  );
+
+  $(".twitter img").hover(
+    function () {
+      $(this).attr("src","./images/twitter.png");
+    },
+    function () {
+      $(this).attr("src","./images/twitter.svg");
+    }
+  );
+
+  $(".instagram img").hover(
+    function () {
+      $(this).attr("src","./images/instagram.png");
+    },
+    function () {
+      $(this).attr("src","./images/instagram.svg");
+    }
+  );
 });
