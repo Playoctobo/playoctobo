@@ -487,11 +487,14 @@ nav .right img {
   font-weight: 900;
 }
 
-.tab-content { padding-top: 31px; }
+.tab-content {
+  padding-bottom: 30px;
+  padding-top: 31px;
+}
 
 .tab-content .tab-panel > .content {
   -webkit-flex-direction: column;
-  padding: 69px 35px 88px 35px;
+  padding: 60px 35px 0 35px;
   -ms-flex-direction: column;
   flex-direction: column;
   display: -webkit-flex;
@@ -500,7 +503,7 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
-  .tab-content .tab-panel > .content { padding: 69px 0 88px 0; }
+  .tab-content .tab-panel > .content { padding: 0 0 88px 0; }
 
   .product-features .feature-tabs {
     text-align: left;
@@ -1408,7 +1411,7 @@ nav .right img {
 
   /** operating system **/
   .features .desktop .operating-system {
-    top: 50%;
+    top: 51%;
     left: 0;
   }
 
@@ -1512,7 +1515,7 @@ nav .right img {
 
   /** expanding app library **/
   .features .desktop .expanding-app {
-    bottom: 28%;
+    bottom: 27%;
     right: -3%;
   }
 
