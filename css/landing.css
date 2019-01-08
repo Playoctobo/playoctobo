@@ -246,11 +246,7 @@ img {
   position: absolute;
   height: 63px;
   width: 53px;
-  left: 46%;
-}
-
-@media (min-width: 768px) {
-  .video a { left: 50%; }
+  left: 50%;
 }
 
 @media (min-width: 992px) {
@@ -267,6 +263,7 @@ nav { position: relative; }
 
 nav .hex {
   position: absolute;
+  width: 233px;
   right: 0;
   top: 0;
 }
@@ -310,6 +307,10 @@ nav .right img {
     margin-right: 20px;
     width: 94px;
   }
+}
+
+@media(min-width: 1024px) {
+  nav .hex { width: 561px; }
 }
 
 @media (min-width: 1200px) {
@@ -470,6 +471,7 @@ nav .right img {
   border-bottom: 2px solid var(--mainBlueOpacity);
   justify-content: space-between;
   display: -webkit-flex;
+  border-radius: 4px;
   display: -ms-flex;
   text-align: left;
   display: flex;
@@ -1784,9 +1786,13 @@ nav .right img {
   padding-top: 19px;
 }
 
-.mobile .testimonials .header {
-  padding-bottom: 50px;
-  padding-top: 50px;
+.mobile .testimonials .header { padding: 50px 35px; }
+
+.testimonials .header h1 {
+  line-height: 48px;
+  margin: 0 auto;
+  width: 350px;
+  padding: 0;
 }
 
 .mobile .testimonials .slider,
@@ -1807,7 +1813,7 @@ nav .right img {
 @media (min-width: 992px) {
   .testimonials {
     background-color: var(--lightPurple);
-    height: 720px;
+    height: 680px;
   }
 
   .testimonials .video {
@@ -1818,13 +1824,22 @@ nav .right img {
   }
 
   .testimonials .header {
+    padding: 87px 45px 86px 45px;
     border-radius: 3px;
-    padding: 87px 44px;
+    height: 322px;
+    width: 380px;
     z-index: 1;
   }
 
+  .testimonials .header h1 {
+    line-height: 48px;
+    margin: 0 auto;
+    width: 290px;
+    padding: 0;
+  }
+
   .testimonials .other-content {
-    grid-template-columns: 46.5% 40%;
+    grid-template-columns: 39% 34.2%;
     justify-content: center;
     -ms-align-items: center;
     padding-bottom: 40px;
@@ -1837,6 +1852,7 @@ nav .right img {
 
   .testimonials .other-content .slider .slider-content {
     border-radius: 3px;
+    text-align: left;
     height: 310px;
     width: 450px;
   }
@@ -1852,6 +1868,13 @@ nav .right img {
     margin: auto;
   }
 
+  .testimonials .other-content .slider .slider-content p { text-align: left; }
+  .testimonials .other-content .slider .slider-content h3 {
+    letter-spacing: 0.38px;
+    line-height: 26px;
+    font-size: 20px;
+  }
+
   .testimonials .other-content .swiper-pagination { bottom: 20px; }
   .testimonials .other-content .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
 
@@ -1863,7 +1886,7 @@ nav .right img {
 
 @media (min-width: 992px) {
   .testimonials .other-content {
-    grid-template-columns: 40.5% 37%;
+    grid-template-columns: 40.5% 34.2%;
   }
 }
 
@@ -1877,11 +1900,22 @@ nav .right img {
 
 .meet-friends .hex {
   position: absolute;
+  top: 29%;
   right: 0;
 }
 
-.meet-friends .friends-content h1 { padding-top: 32px; }
 .meet-friends .friends-content { text-align: center; }
+
+.meet-friends .friends-content h1 {
+  padding-bottom: 5px;
+  padding-top: 32px;
+}
+
+.meet-friends .friends-content p {
+  white-space: normal;
+  margin: 0 auto;
+  width: 305px;
+}
 
 .meet-friends .friends-images {
   padding-bottom: 32px;
@@ -1889,22 +1923,46 @@ nav .right img {
 }
 
 @media(min-width: 768px) {
-  .meet-friends .friends-images img { height: 300px; }
-  .meet-friends .friends-images { padding-bottom: 0; }
+  .meet-friends {
+    padding-bottom: 80px;
+    padding-top: 81px;
+  }
+
   .meet-friends .friends-content { text-align: left; }
 
+  .meet-friends .friends-images {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
   .meet-friends .content {
-    grid-template-columns: 38% 40%;
+    grid-template-columns: 50% 49%;
     justify-content: center;
     display: grid;
+  }
+
+  .meet-friends .friends-content h1 {
+    padding-bottom: 5px;
+    padding-top: 32px;
+  }
+
+  .meet-friends .friends-content p {
+    white-space: normal;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .meet-friends .btn { display: none; }
 }
 
 @media (min-width: 992px) {
-  .meet-friends { padding-top: 107px; }
+  .meet-friends .content { grid-template-columns: 37% 35%; }
   .meet-friends .friends-content h1 { padding-top: 0; }
+
+  .meet-friends .friends-content p {
+    width: 378px;
+    margin: 0;
+  }
 }
 
 /**********************************
