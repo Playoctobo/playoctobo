@@ -302,7 +302,7 @@
             </tr>
           </table>
 
-          <a href="https://shop.trycelery.com/page/5c2f5d0b9d2284130021163c" target="_blank" class="btn">Order Advanced Pack Now ($99)</a>
+          <a href="https://shop.trycelery.com/page/5c2f5d0b9d2284130021163c" target="_blank" class="btn">Order Advanced Pack Now ($149)</a>
         </section>
         <!-- end advanced pack -->
       </section>
@@ -495,7 +495,7 @@
     <section class="perfect-for-grid">
       <section class="text">
         <h1>Perfect for Children 2-7</h1>
-        <p>“Play gives children a chance to practice what they are learning.” - <span class="bold">Mr. Rogers</span></p>
+        <p><em>“Play gives children a chance to practice what they are learning.”</em> - <span class="bold">Mr. Rogers</span></p>
       </section>
 
       <!-- start 2-3 years old -->
@@ -940,7 +940,7 @@
 
         <section class="text">
           <h2>How the children learn</h2>
-          <p>“Tell me and I forget, show me and I remember, involve me and I understand.” <snap class="bold">— from Xun Kuang, 3rd century BC</snap>
+          <p><em>“Tell me and I forget, show me and I remember, involve me and I understand.”</em> <span class="bold">— from Xun Kuang, 3rd century BC</span>
 
           Modern research echoes ancient wisdom in confirming that an emotionally rich, playful, and self-directed learning experience leads to better results than the classical pedagogy many of us grew up with (and often disliked).
 
@@ -1115,18 +1115,22 @@
   <script src="./js/landing.js"></script>
   <script src="./js/swiper.min.js"></script>
   <script>
-  var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-      },
-      centeredSlides: true,
-      loop: true,
+        centeredSlides: true,
+        loop: true,
 
-      mousewheel: {
-        invert: false
-      }
-    });
+        mousewheel: {
+          invert: false
+        },
+
+        renderBullet: function (index, className) {
+          return '<div class="slider-invisible"><a class="' + className + '"></a></div>';
+        },
+      },
+      });
   </script>
 </body>
 </html>
