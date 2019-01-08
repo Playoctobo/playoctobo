@@ -143,10 +143,11 @@ img {
   border-radius: 3px;
   position: relative;
   display: -ms-flex;
+  line-height: 1.3;
   font-weight: 900;
+  padding: 20px 0;
   cursor: pointer;
   display: flex;
-  padding: 20px;
   height: 60px;
   width: 100%;
 }
@@ -244,9 +245,8 @@ img {
 
 .video a {
   position: absolute;
-  height: 63px;
   width: 53px;
-  left: 50%;
+  left: 46%;
 }
 
 @media (min-width: 992px) {
@@ -287,7 +287,6 @@ nav .left img {
 }
 
 nav .right img {
-  padding-top: 40px;
   margin-left: 0;
   width: 63.6px;
 }
@@ -305,6 +304,7 @@ nav .right img {
 
   nav .right img {
     margin-right: 20px;
+    padding-top: 40px;
     width: 94px;
   }
 }
@@ -337,7 +337,12 @@ nav .right img {
 }
 
 .masthead .plush-image { margin-top: -120px; }
-.masthead .plush-image img { max-width: 331px; }
+
+.masthead .plush-image img {
+  margin-left: -30px;
+  margin-top: 42px;
+  max-width: 331px;
+}
 
 .masthead .inner .content {
   -webkit-flex-direction: column;
@@ -357,8 +362,7 @@ nav .right img {
 .masthead .inner p {
   padding-bottom: 24px;
   text-align: center;
-  line-height: 32px;
-  font-size: 20px;
+  line-height: 27px;
 }
 
 .masthead .inner .btn {
@@ -395,7 +399,9 @@ nav .right img {
 
   .masthead .inner p {
     padding-bottom: 38px;
+    line-height: 32px;
     text-align: left;
+    font-size: 20px;
     width: 100%;
   }
 
@@ -407,44 +413,59 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
-  .masthead .plush-image img { max-width: 691.7px; }
+  .masthead .plush-image img {
+    max-width: 691.7px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
   .masthead .inner p { width: 500px; }
 }
 
 /**********************************
   PRODUCT PRESS
 ***********************************/
-.product-press { padding-bottom: 100px; }
+.product-press { padding-bottom: 40px; }
+
+.product-press .video img:nth-child(1) {
+  height: 275px;
+}
 
 .bar {
   background-color: var(--green);
   grid-template-columns: 40% 40%;
   -webkit-flex-direction: column;
+  padding: 30px 39px 21px 27px;
   grid-template-rows: 30% 30%;
   -ms-flex-direction: column;
   justify-content: center;
   -ms-align-items: center;
   flex-direction: column;
-  grid-column-gap: 40px;
+  grid-column-gap: 48px;
   align-items: center;
-  grid-row-gap: 30px;
+  grid-row-gap: 24px;
   display: grid;
-  padding: 25px;
   height: 130px;
 }
 
-.bar .logo { height: 20px; }
+.bar .zam { width: 60px; }
+.bar .engadget { width: 133px; }
+.bar .usc-games { width: 138px; }
+.bar .tech-crunch { width: 161px; }
 
 @media (min-width: 768px) {
-  .bar {
-    grid-template-columns: 15% 15% 15% 11%;
-    grid-template-rows: 100%;
-    padding: 24px;
+  .product-press .video img:nth-child(1) {
+    height: auto;
+    width: auto;
   }
 }
 
 @media (min-width: 992px) {
   .product-press { padding-bottom: 222px; }
+
+  .product-press .video img:nth-child(1) {
+    width: 620px;
+  }
 
   .bar {
     -webkit-flex-direction: row;
@@ -459,9 +480,10 @@ nav .right img {
     display: flex;
   }
 
-  .product-press .video img:nth-child(1) {
-    width: 620px;
-  }
+  .bar .usc-games { width: 152.8px; }
+  .bar .engadget { width: 148px; }
+  .bar .tech-crunch { width: 212px; }
+  .bar .zam { width: 100px; }
 }
 
 /**********************************
@@ -681,15 +703,14 @@ nav .right img {
 
 .pricing__table.pricing__table--starterPack table,
 .pricing__table.pricing__table--advancedPack table {
-  margin-bottom: 31px;
   padding-left: 22.5px;
+  margin-bottom: 33.2px;
   margin-top: 23px;
 }
 
 .pricing__table.pricing__table--starterPack table tr td:nth-child(1),
 .pricing__table.pricing__table--advancedPack table tr td:nth-child(1) {
   display: -webkit-flex;
-  padding-bottom: 16px;
   display: -ms-flex;
   margin-top: 5px;
   display: flex;
@@ -698,17 +719,22 @@ nav .right img {
 
 .pricing__table.pricing__table--starterPack table tr td:nth-child(2),
 .pricing__table.pricing__table--advancedPack table tr td:nth-child(2) {
-  padding-left: 16px;
+  padding-left: 8px;
 }
 
 .pricing__table.pricing__table--starterPack table tr td:last-child,
 .pricing__table.pricing__table--advancedPack table tr td:last-child {
-  padding-bottom: 0;
+  padding-bottom: 17px;
 }
 
 .pricing__table.pricing__table--starterPack .illustration img,
 .pricing__table.pricing__table--advancedPack .illustration img {
   height: 166px;
+}
+
+.pricing__table .btn {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 @media (min-width: 768px) {
@@ -717,6 +743,12 @@ nav .right img {
 
   .pricing__table.pricing__table--starterPack table,
   .pricing__table.pricing__table--advancedPack table {
+    padding-left: 0;
+  }
+
+  .pricing__table.pricing__table--starterPack table,
+  .pricing__table.pricing__table--advancedPack table {
+    margin-bottom: 32px;
     padding-left: 0;
   }
 
@@ -736,6 +768,11 @@ nav .right img {
 
   .pricing__table.pricing__table--starterPack {
     margin-bottom: 0;
+  }
+
+  .pricing__table .btn {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
   }
 }
 
@@ -995,7 +1032,9 @@ nav .right img {
 ***********************************/
 .perfect-for .hex {
   position: absolute;
+  left: -290px;
   z-index: -1;
+  top: 280px;
 }
 
 .perfect-for {
@@ -1103,6 +1142,11 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
+  .perfect-for .hex {
+    left: auto;
+    top: auto;
+  }
+
   .perfect-for {
     padding-bottom: 254.4px;
     padding-right: 0;
@@ -1629,9 +1673,12 @@ nav .right img {
   .features .desktop .images .comp-Tablet-image,
   .features .desktop .images .genuine-personality-image,
   .features .desktop .images .size-image,
-  .features .desktop .images .soft-and-safe-image,
-  .features .desktop .images .expanding-app-image {
+  .features .desktop .images .soft-and-safe-image {
     left: 23%;
+  }
+
+  .features .desktop .images .expanding-app-image {
+    left: 21.4% !important;
   }
 
   .features .desktop .operating-system .text,
@@ -1819,7 +1866,6 @@ nav .right img {
 .testimonials .header h1 {
   line-height: 48px;
   margin: 0 auto;
-  width: 350px;
   padding: 0;
 }
 
