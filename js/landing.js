@@ -30,8 +30,6 @@ $(document).ready(function() {
            .siblings('.active').removeClass('active');
   });
 
-  // scroll test
-
   // product features
   $( ".feature" ).mouseenter(function() {
     $("." + $(this).attr("feature") + "-image").show();

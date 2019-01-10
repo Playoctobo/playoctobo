@@ -219,10 +219,12 @@ img {
 .swiper-slide {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
+  background: var(--white);
   -ms-align-items: center;
   flex-direction: column;
   display: -webkit-flex;
   align-items: center;
+  text-align: center;
   position: relative;
   display: -ms-flex;
   display: flex;
@@ -1354,94 +1356,42 @@ nav .right img {
   FEATURES
 ***********************************/
 .features { padding: 20px 23px 32px 23px; }
-.swiper-container { text-align: center; }
 
 .swiper-container {
   height: 100%;
   width: 100%;
 }
 
-.features .swiper-slide .middlePlush-image {
-  position: absolute;
-  width: 250px;
-  left: 4%;
-  top: 7%;
-}
-
 .features .swiper-slide .middleIcon-image {
-  position: absolute;
-  bottom: 44%;
-  left: 41%;
-}
-
-.features .swiper-slide .middleIcon-image.batteriesIcon,
-.features .swiper-slide .middleIcon-image.hypoallergenicIcon { bottom: 38%; }
-
-.features .swiper-slide .middleIcon-image.genuinePersonalityIcon { bottom: 41%; }
-.features .swiper-slide .middleIcon-image.hypoallergenicIcon { left: 42%; }
-.features .swiper-slide .middleIcon-image.operatingIcon { bottom: 37%; }
-.features .swiper-slide .middleIcon-image.sizeIcon { bottom: 34%; }
-
-.features .swiper-slide .middlePlush-image.operatingImage { top: 0; }
-
-.features .swiper-slide .middleIcon-image.soft-and-safe {
-  bottom: 41%;
-  left: 42%;
+  padding-bottom: 8px;
+  padding-top: 26px;
 }
 
 .features .swiper-slide .text {
-  padding: 20px 0 60px;
+  width: 338px;
+}
+
+.features .swiper-slide .text h2 { padding: 0; }
+
+.features .swiper-slide .text p {
+  padding-bottom: 32px;
+  padding-top: 4px;
 }
 
 .features .swiper-slide .text .OS-logos {
-  margin-top: 32px;
   height: 24px;
 }
 
-.features .swiper-slide .text h2 { color: var(--blue); }
 .features .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
 
-@media (min-width: 375px) {
-  .features .swiper-slide .middlePlush-image {
-    width: 300px;
-  }
+.swiper-button-next, .swiper-button-prev { top: 30%; }
 
-  .features .swiper-slide .middleIcon-image {
-    bottom: 37%;
-    left: 43%;
-  }
-
-  .features .swiper-slide .middleIcon-image.genuinePersonalityIcon { bottom: 34%; }
-  .features .swiper-slide .middleIcon-image.hypoallergenicIcon { bottom: 34%; }
-  .features .swiper-slide .middleIcon-image.batteriesIcon { bottom: 34%; }
-  .features .swiper-slide .middleIcon-image.soft-and-safe { bottom: 37%; }
-  .features .swiper-slide .middleIcon-image.operatingIcon { bottom: 33%; }
-  .features .swiper-slide .middleIcon-image.sizeIcon { bottom: 30%; }
-
-  .features .swiper-slide .middleIcon-image.tablet-sizesIcon {
-    bottom: 39%;
-    left: 43%;
-  }
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background-image: url(../images/icon-arrow-left.svg);
 }
 
-@media (min-width: 425px) {
-  .features .swiper-slide .middlePlush-image {
-    bottom: 39%;
-    left: 10%;
-  }
-
-  .features .swiper-slide .middleIcon-image.hypoallergenicIcon {
-    bottom: 30%;
-    left: 43%;
-  }
-
-  .features .swiper-slide .middleIcon-image.soft-and-safe {
-    bottom: 33%;
-    left: 44%;
-  }
-
-  .features .swiper-slide .middleIcon-image.operatingIcon { bottom: 29%; }
-  .features .swiper-slide .middleIcon-image.tablet-sizesIcon { bottom: 36% }
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background-image: url(../images/icon-arrow-right.svg);
 }
 
 @media (min-width: 768px) {
@@ -1451,28 +1401,6 @@ nav .right img {
     position: absolute;
     top: -20%;
     left: 0;
-  }
-
-  .features .swiper-slide .middlePlush-image {
-    left: 30%;
-  }
-
-  .features .swiper-slide .middleIcon-image {
-    bottom: 33%;
-    left: 47%;
-  }
-
-  .features .swiper-slide .middleIcon-image.genuinePersonalityIcon { bottom: 30%; }
-  .features .swiper-slide .middleIcon-image.hypoallergenicIcon { left: 46%; }
-
-  .features .swiper-slide .middleIcon-image.soft-and-safe {
-    bottom: 30%;
-    left: 47%;
-  }
-
-  .features .swiper-slide .middleIcon-image.tablet-sizesIcon {
-    left: 47%;
-    top: 56%;
   }
 }
 
