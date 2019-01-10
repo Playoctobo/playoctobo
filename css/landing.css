@@ -231,19 +231,13 @@ img {
   display: flex;
 }
 
-.swiper-pagination-bullets .swiper-pagination-bullet { margin: 0 6px !important; }
-.swiper-pagination-bullet { background: transparent; }
-
-.swiper-pagination-bullet img {
-  max-width: 14px;
-  height: 15px;
-}
-
-@media (min-width: 768px) {
-  .swiper-pagination-bullet img {
-    max-width: 7.7px;
-    height: 8px;
-  }
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-image: url(../images/slider-pagination.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background: transparent;
+  height: 14px;
+  width: 15px;
 }
 
 /* Videos */
@@ -1973,7 +1967,7 @@ nav .right img {
     font-size: 20px;
   }
 
-  /*.testimonials .other-content .swiper-pagination { bottom: 20px; }*/
+  .testimonials .other-content .swiper-pagination { bottom: 20px; }
 
   .testimonials .btn {
     width: 321px;
