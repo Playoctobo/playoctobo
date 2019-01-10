@@ -1148,7 +1148,7 @@ nav .right img {
   padding-bottom: 40px;
   text-align: center;
   padding-top: 41px;
-  width: 305px;
+  width: 290px;
 }
 
 .perfect-for .perfect-for-grid > .box {
@@ -1165,7 +1165,6 @@ nav .right img {
 
 .perfect-for .perfect-for-grid > .box .box__content {
   position: absolute;
-  /*left: 117px;*/
   left: 93px;
 }
 
