@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="8px" height="9px" viewBox="0 0 8 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>Path 8</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="PlayOctobo-UI-Final" transform="translate(-490.000000, -9185.000000)" fill="#15D4EF" fill-rule="nonzero">
-            <g id="Testimonials" transform="translate(0.000000, 8459.000000)">
-                <g transform="translate(250.000000, 0.000000)" id="Pagination">
-                    <g transform="translate(240.000000, 726.000000)">
-                        <path d="M0.240571906,2.1937874 L3.57749111,0.159265164 C3.73790455,0.0614609623 3.9395148,0.0614609623 4.09992825,0.159265164 L7.43684745,2.1937874 C7.58625736,2.28488274 7.67741935,2.4472342 7.67741935,2.62222472 L7.67741935,6.51858897 C7.67741935,6.69878584 7.5807982,6.86514693 7.42428078,6.95443976 L4.08736157,8.85814465 C3.93325128,8.94606423 3.74416807,8.94606423 3.59005778,8.85814465 L0.253138578,6.95443976 C0.0966211571,6.86514693 4.66156962e-16,6.69878584 4.4408921e-16,6.51858897 L0,2.62222472 C-2.14301582e-17,2.4472342 0.0911619937,2.28488274 0.240571906,2.1937874 Z" id="Path-8"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+<g id="Page-1">
+	<g id="PlayOctobo-UI-Final" transform="translate(-490.000000, -9185.000000)">
+		<g id="Testimonials" transform="translate(0.000000, 8459.000000)">
+			<g id="Pagination" transform="translate(250.000000, 0.000000)">
+				<g transform="translate(240.000000, 726.000000)">
+					<path id="Path-8" style="fill:#15D4EF;" d="M0.9,2.2l3.3-2c0.2-0.1,0.4-0.1,0.5,0l3.3,2c0.1,0.1,0.2,0.3,0.2,0.4v3.9
+						c0,0.2-0.1,0.3-0.3,0.4L4.7,8.9c-0.2,0.1-0.3,0.1-0.5,0L0.9,6.9C0.8,6.9,0.7,6.7,0.7,6.5V2.6C0.7,2.4,0.8,2.3,0.9,2.2z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

@@ -240,6 +240,12 @@ img {
   width: 15px;
 }
 
+@media(min-width: 992px) {
+  .swiper-pagination-bullets .swiper-pagination-bullet {
+    height: 9px;
+  }
+}
+
 /* Videos */
 .video {
   -ms-align-items: center;
@@ -1385,7 +1391,7 @@ nav .right img {
 
 .features .swiper-slide .text .OS-logos { height: 24px; }
 
-.swiper-button-next, .swiper-button-prev { top: 30%; }
+.swiper-button-next, .swiper-button-prev { top: 23%; }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
   background-image: url(../images/icon-arrow-left.svg);
