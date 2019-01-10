@@ -841,7 +841,7 @@ nav .right img {
 
 .storykits .box > .hex {
   position: absolute;
-  left: 40%;
+  left: 37.5%;
 }
 
 .storykits .box > .box__content .text h2 {
@@ -858,23 +858,40 @@ nav .right img {
   align-items: center;
   padding-bottom: 0;
   display: -ms-flex;
-  padding-top: 56px;
+  padding-top: 52px;
   display: flex;
 }
 
+.box__content h2 { padding: 0; }
+
 .mobile .box__content p,
 .mobile .games {
-  padding: 16px 19px 24px 19px;
+  padding-bottom: 16px;
   text-align: center;
 }
 
-.box__content .header h2 { width: 190px; }
-.box__content .header p { width: 290px; }
+.box__content .header h2 {
+  padding-bottom: 8.1px;
+  padding-top: 0;
+  width: 238.3px;
+}
+
+.box__content .header p {
+  padding-top: 0;
+  width: 290px;
+}
+
 .box__content .image { padding-bottom: 16px; }
 
+.box__content .main-copy {
+  padding-bottom: 24px;
+  padding-right: 18px;
+  padding-left: 19px;
+}
+
 .storykit__info {
+  padding: 24px 22px 23px 23px;
   color: var(--white);
-  padding: 20px 15px;
   text-align: center;
   position: relative;
   display: block;
@@ -908,7 +925,13 @@ nav .right img {
   .storykits .box > .mobile .box__content { text-align: left; }
 
   .storykits .box > .desktop .box__content .text {
-    padding: 38px 46px;
+    padding-right: 49px;
+    padding-left: 46px;
+    padding-top: 38px;
+  }
+
+  .storykits .box > .desktop .box__content .text p {
+    padding-top: 24px;
   }
 
   .storykit__info {
@@ -978,6 +1001,10 @@ nav .right img {
     display: grid;
   }
 
+  .storykits .box.purple > .desktop .box__content .image {
+    width: 368px;
+  }
+
   .storykit__info.storykit__info--purple {
     bottom: -15%;
     right: -5%;
@@ -1009,27 +1036,20 @@ nav .right img {
 
 .storykit__info.storykit__info--yellow .music { padding: 30px 0; }
 
-.storykits .box.yellow > .box__content .text {
-  padding-left: 49px;
-  padding-top: 46px;
-}
-
-.storykits .box.yellow > .box__content .letter-search img {
-  margin-right: -6px;
+.storykits .box.yellow .box__content .letter-search img {
+  padding-bottom: 24px;
   height: 456px;
 }
 
-.storykits .box.yellow > .box__content .games img {
-  padding-left: 49px;
+.storykits .box.yellow .box__content .games img {
+  padding-bottom: 24px;
   margin-left: 0;
 }
 
-.storykits .box.yellow > .desktop .box__content .text__no--padding {
-  padding: 0 0 0 15px;
-}
-
-.storykits .box.yellow > .box__content .text h1 {
-  padding-bottom: 24px;
+.games .text {
+  padding-right: 22px;
+  padding-left: 23px;
+  padding-top: 23px;
 }
 
 .storykit__info.storykit__info--yellow {
@@ -1046,15 +1066,38 @@ nav .right img {
     top: -4.2%;
   }
 
-  .storykits .box.yellow > .desktop .box__content {
+  .storykits .box.yellow .box__content {
     grid-template-columns: 50% 50%;
     grid-template-rows: 72% 26%;
-    grid-row-gap: 20px;
+    padding-bottom: 77px;
+    height: 733px;
     display: grid;
   }
 
+  .storykits .box.yellow .box__content .text {
+    padding-left: 49px;
+    padding-top: 46px;
+    padding-right: 0;
+    width: 450px;
+  }
+
+  .storykits .box.yellow .letter-search img {
+    padding-bottom: 0;
+    margin-right: 0;
+    width: 309px;
+  }
+
+  .storykits .box.yellow .text__no--padding {
+    padding-left: 33px;
+    padding-top: 0;
+  }
+
+  .storykits .box.yellow .text__no--padding h2 {
+    padding-bottom: 24px;
+  }
+
   .storykit__info.storykit__info--yellow {
-    bottom: -12%;
+    bottom: -8%;
     left: -2%;
   }
 
