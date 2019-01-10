@@ -1445,7 +1445,6 @@ nav .right img {
 
   .features .desktop .inner_content p {
     text-align: center;
-    font-style: italic;
     position: absolute;
     width: 100%;
     bottom: 17%;
@@ -1900,6 +1899,8 @@ nav .right img {
 .mobile .testimonials .swiper-container .swiper-slider {
   background-color: var(--lightPurple);
 }
+
+.mobile .testimonials .slider { padding-bottom: 32px; }
 
 .testimonials .swiper-pagination-bullet {
   background-image: url(../images/slider-pagination-white.svg) !important;
