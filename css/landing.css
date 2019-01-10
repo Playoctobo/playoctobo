@@ -1785,7 +1785,7 @@ nav .right img {
 .verticalLine { display: none; }
 
 .howDoesItWork .header {
-  padding-bottom: 32px;
+  padding-bottom: 17px;
   padding-top: 8px;
 }
 
@@ -1808,22 +1808,25 @@ nav .right img {
 .box.learn { padding-bottom: 56px; }
 
 .box.sensors .stepImage {
+  margin-left: 36px;
   margin-top: -27px;
   width: 220px;
 }
 
 .box.learn .stepImage {
   margin-top: -23px;
+  margin-left: 7px;
   width: 229px;
 }
 
 .box.development .stepImage {
   margin-top: -20px;
+  margin-left: 40px;
   width: 197px;
 }
 
 .howDoesItWork .greenHex {
-  width: 332px;
+  width: 355px;
   bottom: 0;
   left: 0;
 }
@@ -1862,6 +1865,14 @@ nav .right img {
     display: grid;
   }
 
+  .box.sensors .stepImage,
+  .box.learn .stepImage,
+  .box.development .stepImage {
+    margin-left: 54px;
+    margin-top: 0;
+  }
+
+  .box.learn .stepImage { margin-left: 20px; }
   .howDoesItWork .btn { display: none; }
 }
 
