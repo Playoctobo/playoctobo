@@ -2,8 +2,9 @@
   GLOBAL STYLES
 ***********************************/
 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 :root {
@@ -1362,36 +1363,48 @@ nav .right img {
   width: 100%;
 }
 
+.middlePlush-image { width: 309px; }
+
 .features .swiper-slide .middleIcon-image {
-  padding-bottom: 8px;
-  padding-top: 26px;
+  margin-bottom: 8px;
+  margin-top: 26px;
 }
 
-.features .swiper-slide .text {
-  width: 338px;
+.features .swiper-slide .middleIcon-image img {
+  width: 304px;
 }
 
-.features .swiper-slide .text h2 { padding: 0; }
+.features .swiper-slide .text { width: 320px; }
+
+.features .swiper-slide .text h2 {
+  color: var(--blue);
+  padding: 0;
+}
 
 .features .swiper-slide .text p {
   padding-bottom: 32px;
   padding-top: 4px;
 }
 
-.features .swiper-slide .text .OS-logos {
-  height: 24px;
-}
-
+.features .swiper-slide .text .OS-logos { height: 24px; }
 .features .swiper-pagination .swiper-pagination-bullet { background-color: var(--blue); }
 
 .swiper-button-next, .swiper-button-prev { top: 30%; }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
   background-image: url(../images/icon-arrow-left.svg);
+  background-size: 28px;
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   background-image: url(../images/icon-arrow-right.svg);
+  background-size: 28px;
+}
+
+.features .btn {
+  margin-top: 32px !important;
+  margin: auto;
+  width: 321px;
 }
 
 @media (min-width: 768px) {
