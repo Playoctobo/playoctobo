@@ -155,6 +155,10 @@ img {
 
 .btn:hover { box-shadow: none; }
 
+@media(min-width: 768px) {
+  .btn { width: 321px; }
+}
+
 /** Modals **/
 #videoPressModal,
 #videoTestimonialsModal {
@@ -255,17 +259,23 @@ img {
 
 .video a {
   position: absolute;
-  width: 53px;
-  left: 42%;
+  -ms-align-items: center;
+  display: -webkit-flex;
+  align-items: center;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 100%;
 }
+
+.video-icon { width: 53px !important; }
 
 @media (min-width: 992px) {
   .video img:nth-child(1) {
     position: relative;
     height: inherit;
   }
-
-  .video a { left: 46%; }
 }
 
 /**********************************
@@ -379,7 +389,7 @@ nav .right img {
 
 .masthead .inner .btn {
   margin-bottom: 14.4px;
-  width: 321px;
+  width: 305px;
 }
 
 @media (min-width: 576px) {
@@ -911,15 +921,18 @@ nav .right img {
   display: grid;
 }
 
-.storykits .btn { margin-top: 10px; }
+.storykits .btn {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 16px;
+}
 
 @media (min-width: 768px) {
   .storykits .header p { width: 360px; }
 
   .storykits .box { width: 630px; }
   .storykits .box > .hex { left: 45%; }
-
-  .storykits .btn { width: 630px; }
+  .storykits .btn { margin-top: 100px; }
 }
 
 @media (min-width: 992px) {
@@ -952,11 +965,6 @@ nav .right img {
     height: 115px;
     width: 661px;
     z-index: 999;
-  }
-
-  .storykits .btn {
-    margin-top: 160px;
-    width: 321px;
   }
 }
 
@@ -1217,7 +1225,6 @@ nav .right img {
 
 .perfect-for .btn {
   margin-top: 40px;
-  width: 305px;
 }
 
 @media (min-width: 768px) {
@@ -1287,7 +1294,6 @@ nav .right img {
 
   .perfect-for .btn {
     margin-top: 70px;
-    width: 321px;
   }
 }
 
@@ -1407,7 +1413,6 @@ nav .right img {
 .features .btn {
   margin-top: 32px !important;
   margin: auto;
-  width: 321px;
 }
 
 @media (min-width: 768px) {
@@ -1683,7 +1688,6 @@ nav .right img {
 
   .features .desktop .btn {
     position: absolute;
-    width: 321px;
     margin: auto;
     bottom: 6%;
     left: 34%;
@@ -1753,7 +1757,7 @@ nav .right img {
 ***********************************/
 .howDoesItWork {
   position: relative;
-  padding-top: 62px;
+  padding-top: 8px;
 }
 
 .howDoesItWork .yellowHex,
@@ -1780,46 +1784,59 @@ nav .right img {
 
 .verticalLine { display: none; }
 
-.howDoesItWork .header h1 {
-  padding-bottom: 58px;
+.howDoesItWork .header {
+  padding-bottom: 32px;
+  padding-top: 8px;
 }
 
+.howDoesItWork .header h1 { padding: 0; }
 .howDoesItWork .grid { text-align: center; }
 
-.box .pointImage { height: 83px; }
+.howDoesItWork .text h2 {
+  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.box .pointImage {
+  position: relative;
+  height: 83px;
+}
 
 .box.sensors,
-.box.learn { padding-bottom: 57px; }
+.box.learn { padding-bottom: 56px; }
 
 .box.sensors .stepImage {
-  height: 221px;
-  width: 202px;
+  margin-top: -27px;
+  width: 220px;
 }
 
 .box.learn .stepImage {
-  height: 205px;
-  width: 230px;
+  margin-top: -23px;
+  width: 229px;
 }
 
 .box.development .stepImage {
-  height: 213px;
+  margin-top: -20px;
   width: 197px;
 }
 
 .howDoesItWork .greenHex {
+  width: 332px;
   bottom: 0;
   left: 0;
 }
 
 .howDoesItWork .btn {
   margin-bottom: 31px;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 24px;
 }
 
 @media (min-width: 992px) {
   .howDoesItWork { margin-bottom: 475px; }
-
-  .howDoesItWork .greenHex img { height: 280px; }
 
   .verticalLine {
     border-left: 2px solid var(--green);
@@ -1849,8 +1866,6 @@ nav .right img {
 }
 
 @media (min-width: 1200px) {
-  .howDoesItWork .greenHex img { height: 300px; }
-
   .verticalLine {
     height: 840px;
     left: 132.4px;
@@ -1858,8 +1873,6 @@ nav .right img {
 }
 
 @media (min-width: 1440px) {
-  .howDoesItWork .greenHex img { height: 470px; }
-
   .verticalLine {
     height: 840px;
     left: 132px;
@@ -1981,7 +1994,6 @@ nav .right img {
   }
 
   .testimonials .btn {
-    width: 321px;
     margin: auto;
   }
 }
