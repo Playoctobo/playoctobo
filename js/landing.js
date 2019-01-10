@@ -30,6 +30,15 @@ $(document).ready(function() {
            .siblings('.active').removeClass('active');
   });
 
+  // stop video embed from playing
+  $('.close').click(function () {
+    $('#videoPressModal iframe').attr("src", jQuery("#videoPressModal iframe").attr("src"));
+  });
+
+  $('.close').click(function () {
+    $('#videoTestimonialsModal iframe').attr("src", jQuery("#videoTestimonialsModal iframe").attr("src"));
+  });
+
   // product features
   $( ".feature" ).mouseenter(function() {
     $("." + $(this).attr("feature") + "-image").show();
