@@ -816,6 +816,7 @@ nav .right img {
   .pricing__table .btn {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
+    width: 100%;
   }
 }
 
