@@ -1850,7 +1850,7 @@ nav .right img {
     height: 930px;
     left: 113.4px;
     z-index: -1;
-    top: 221px;
+    top: 100px;
   }
 
   .howDoesItWork .grid {
@@ -1875,6 +1875,14 @@ nav .right img {
     margin-left: 54px;
     margin: auto;
   }
+
+  .box.sensors .stepImage { margin-top: 0; }
+  .box.learn .stepImage { margin-top: 0; }
+  .box.development .stepImage { margin-top: 0; }
+
+  .box.sensors .pointImage { margin-top: -180px; }
+  .box.learn .pointImage { margin-top: -110px; }
+  .box.development .pointImage { margin-top: -70px; }
 
   .box.sensors,
   .box.learn { padding-bottom: 0; }
