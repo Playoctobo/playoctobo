@@ -1808,21 +1808,22 @@ nav .right img {
 .box.sensors,
 .box.learn { padding-bottom: 56px; }
 
+.box.sensors .stepImage,
+.box.learn .stepImage,
+.box.development .stepImage { margin: auto; }
+
 .box.sensors .stepImage {
-  margin-left: 36px;
   margin-top: -27px;
   width: 220px;
 }
 
 .box.learn .stepImage {
   margin-top: -23px;
-  margin-left: 7px;
   width: 229px;
 }
 
 .box.development .stepImage {
   margin-top: -20px;
-  margin-left: 40px;
   width: 197px;
 }
 
@@ -1876,9 +1877,20 @@ nav .right img {
     margin: auto;
   }
 
-  .box.sensors .stepImage { margin-top: 0; }
-  .box.learn .stepImage { margin-top: 0; }
-  .box.development .stepImage { margin-top: 0; }
+  .box.sensors .stepImage {
+    margin-left: 36px;
+    margin-top: 0;
+  }
+
+  .box.learn .stepImage {
+    margin-left: 7px;
+    margin-top: 0;
+  }
+
+  .box.development .stepImage {
+    margin-left: 40px;
+    margin-top: 0;
+  }
 
   .box.sensors .pointImage { margin-top: -180px; }
   .box.learn .pointImage { margin-top: -110px; }
