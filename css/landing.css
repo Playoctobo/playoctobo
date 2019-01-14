@@ -449,10 +449,6 @@ nav .right img {
 ***********************************/
 .product-press { padding-bottom: 40px; }
 
-.product-press .video img:nth-child(1) {
-  height: 275px;
-}
-
 .bar {
   background-color: var(--green);
   grid-template-columns: 40% 40%;
@@ -506,6 +502,11 @@ nav .right img {
   .bar .engadget { width: 148px; }
   .bar .tech-crunch { width: 212px; }
   .bar .zam { width: 100px; }
+
+  .bar .engadget,
+  .bar .tech-crunch {
+    margin: 0 32px;
+  }
 }
 
 /**********************************
@@ -821,11 +822,15 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
-  .pricing__tables { grid-template-columns: 27% 27%; }
+  .pricing__tables { grid-template-columns: 37% 37%; }
+}
+
+@media (min-width: 1024px) {
+  .pricing__tables { grid-template-columns: 32% 32%; }
 }
 
 @media (min-width: 1440px) {
-  .pricing__tables { grid-template-columns: 22% 22%; }
+  .pricing__tables { grid-template-columns: 26% 26%; }
 }
 
 @media (min-width: 2560px) {
