@@ -385,6 +385,7 @@ nav .right img {
   padding-bottom: 24px;
   text-align: center;
   line-height: 27px;
+  width: 300px;
 }
 
 .masthead .inner .btn {
@@ -498,10 +499,10 @@ nav .right img {
     display: flex;
   }
 
-  .bar .usc-games { width: 152.8px; }
-  .bar .engadget { width: 148px; }
-  .bar .tech-crunch { width: 212px; }
-  .bar .zam { width: 100px; }
+  .bar .usc-games { width: 123px; }
+  .bar .engadget { width: 118px; }
+  .bar .tech-crunch { width: 182px; }
+  .bar .zam { width: 70px; }
 
   .bar .engadget,
   .bar .tech-crunch {
@@ -747,8 +748,9 @@ nav .right img {
 
 .pricing__table.pricing__table--starterPack table,
 .pricing__table.pricing__table--advancedPack table {
-  padding-left: 22.5px;
   margin-bottom: 33.2px;
+  padding-right: 22.5px;
+  padding-left: 22.5px;
   margin-top: 23px;
 }
 
@@ -787,6 +789,7 @@ nav .right img {
 
   .pricing__table.pricing__table--starterPack table,
   .pricing__table.pricing__table--advancedPack table {
+    padding-right: 0;
     padding-left: 0;
   }
 
@@ -906,8 +909,8 @@ nav .right img {
 
 .box__content .main-copy {
   padding-bottom: 24px;
-  padding-right: 18px;
-  padding-left: 19px;
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 .storykit__info {
@@ -991,6 +994,11 @@ nav .right img {
 }
 
 .storykit__info.storykit__info--purple .idea { padding: 30px 0; }
+
+.storykit__info.storykit__info--purple .music p {
+  margin: auto;
+  width: 180px;
+}
 
 @media (min-width: 576px) {
   .storykits .box.purple > .mobile .box__content .text {
@@ -1718,13 +1726,11 @@ nav .right img {
   }
 
   .features .desktop .operating-system .text,
-  .features .desktop .soft-and-safe .text,
   .features .desktop .expanding-app .text {
     width: 258px;
   }
 
   .features .desktop .operating-system .hover,
-  .features .desktop .soft-and-safe .hover,
   .features .desktop .expanding-app .hover {
     padding-top: 30px;
   }
@@ -1748,14 +1754,27 @@ nav .right img {
   .features .desktop .images .compTablet-image { left: 27%; }
 
   .features .desktop .soft-and-safe {
-    right: -6.5%;
-    top: 50%;
+    right: -0.7%;
+    top: 48%;
   }
+
+  .features .desktop .soft-and-safe .text { width: 198px; }
+  .features .desktop .soft-and-safe .hover { padding-top: 60px; }
 
   .features .desktop .expanding-app { right: -2%; }
   .features .desktop .expanding-app .icon { bottom: 68%; }
 
   .features .desktop .btn { left: 36%; }
+}
+
+@media (min-width: 1201px) {
+  .features .desktop .soft-and-safe {
+    right: -6.5%;
+    top: 50%;
+  }
+
+  .features .desktop .soft-and-safe .text { width: 258px; }
+  .features .desktop .soft-and-safe .hover { padding-top: 30px; }
 }
 
 /**********************************
@@ -1796,7 +1815,12 @@ nav .right img {
 }
 
 .howDoesItWork .header h1 { padding: 0; }
-.howDoesItWork .grid { text-align: center; }
+
+.howDoesItWork .grid {
+  text-align: center;
+  padding-right: 0;
+  padding-left: 0;
+}
 
 .howDoesItWork .text h2 {
   padding-bottom: 16px;
@@ -1860,6 +1884,8 @@ nav .right img {
   }
 
   .howDoesItWork .grid {
+    padding-right: 15px;
+    padding-left: 15px;
     grid-row-gap: 74px;
     text-align: left;
     display: grid;
@@ -1968,7 +1994,7 @@ nav .right img {
 }
 
 .mobile .testimonials .swiper-container p,
-.mobile .testimonials .swiper-container h3 { width: 305px; }
+.mobile .testimonials .swiper-container h3 { width: 295px; }
 
 @media (min-width: 992px) {
   .testimonials {
@@ -2133,8 +2159,19 @@ footer .social-links {
 
 footer .social-links img { height: 53px; }
 
-footer .social-links a { margin-right: 23px; }
-footer .social-links a:last-child { margin-right: 0; }
+footer .social-links a {
+  transition: opacity 0.3s ease;
+  margin-right: 23px;
+  opacity: 0.5;
+}
+
+footer .social-links a:hover {
+  opacity: 1;
+}
+
+footer .social-links a:last-child {
+  margin-right: 0;
+}
 
 footer p {
   letter-spacing: 0.2px;
