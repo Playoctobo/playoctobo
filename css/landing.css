@@ -361,7 +361,7 @@ nav .right img {
 .masthead .plush-image { margin-top: -120px; }
 
 .masthead .plush-image img {
-  margin-left: -30px;
+  margin-left: -15px;
   margin-top: 42px;
   max-width: 331px;
 }
@@ -1386,6 +1386,11 @@ nav .right img {
 
 .middlePlush-image { width: 309px; }
 
+.middlePlush-comp {
+  margin-top: -20px;
+  width: 350px;
+}
+
 .features .swiper-slide .middleIcon-image {
   margin-bottom: 8px;
   margin-top: 10px;
@@ -1631,7 +1636,12 @@ nav .right img {
     top: 7%;
   }
 
-  .features .desktop .images .compTablet-image { left: 22%; }
+  .features .desktop .images .compTablet-image {
+    margin-left: -63px;
+    margin-top: -95px;
+    height: 578px;
+    left: 22%;
+  }
 
   .features .desktop .compTablet .hover {
     margin-top: -44px;
@@ -1751,6 +1761,7 @@ nav .right img {
   .features .desktop .size { right: -3%; }
 
   .features .desktop .compTablet { left: 39%; }
+
   .features .desktop .images .compTablet-image { left: 27%; }
 
   .features .desktop .soft-and-safe {
