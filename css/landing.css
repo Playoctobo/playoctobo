@@ -2143,13 +2143,17 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
-  .meet-friends .content { grid-template-columns: 37% 35%; }
+  .meet-friends .content { grid-template-columns: 42% 35%; }
   .meet-friends .friends-content h1 { padding-top: 0; }
 
   .meet-friends .friends-content p {
     width: 378px;
     margin: 0;
   }
+}
+
+@media (min-width: 1200px) {
+  .meet-friends .content { grid-template-columns: 37% 35%; }
 }
 
 /**********************************
