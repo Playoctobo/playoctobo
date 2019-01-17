@@ -516,12 +516,16 @@ nav .right img {
 .product-features .feature-tabs {
   border-bottom: 2px solid var(--mainBlueOpacity);
   justify-content: space-between;
+  position: -webkit-sticky;
+  background: var(--white);
   display: -webkit-flex;
   border-radius: 4px;
   display: -ms-flex;
+  position: sticky;
   text-align: left;
   display: flex;
   margin: auto;
+  top: 0;
 }
 
 .tab-content .tab-panel { text-align: center; }
@@ -1465,6 +1469,10 @@ nav .right img {
     height: 468px;
     left: 19%;
     top: 20%;
+  }
+
+  .features .desktop .images .expanding-app-image {
+    left: 15.8%;
   }
 
   .features .desktop .inner_content p {
