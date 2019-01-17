@@ -521,6 +521,7 @@ nav .right img {
   display: -webkit-flex;
   border-radius: 4px;
   display: -ms-flex;
+  padding-top: 18px;
   position: sticky;
   text-align: left;
   display: flex;
@@ -609,6 +610,7 @@ nav .right img {
   }
 
   .product-features .feature-tabs {
+    position: relative;
     text-align: left;
     width: 821px;
   }
