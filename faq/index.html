@@ -10,27 +10,28 @@
 
     <title>FAQ</title>
     <style>
-      
+
       .BackGroundImage{
         background-image: url('./WebsiteAssets/PhotoBanner_1280_2.png');
 
-          
+
           background-repeat: no-repeat;
-      
+
           background-size: cover;
 
           font-size: 40px;
           color: white;
           margin: top:;
 
-                
+
       }
+
       .middleBot{
         padding-top: 100px;
         text-align: center;
         color: white;
         padding-bottom: 50px;
-       
+
       }
         .nav-item{
           margin-left: 30px;
@@ -38,8 +39,8 @@
           margin-bottom: 20px;"
         }
 
-        .GQ{ 
-            margin-top: 30px; 
+        .GQ{
+            margin-top: 30px;
             margin-bottom:30px;
             text-align: center;
         }
@@ -76,7 +77,14 @@
         .follow{
           margin-top: 20px;
         }
-
+        .question-title {
+          text-align:left;
+          padding-left:36px;
+          padding-top:3px;
+        }
+        .drop-down-icon{
+          float: left;;
+        }
         footer{
           text-align: center;
           font-size:15px;
@@ -88,6 +96,12 @@
         }
         p a{
           color: white;
+        }
+
+/*  radian added */
+        .btn-link {
+          text-decoration: none !important;
+
         }
     </style>
   </head>
@@ -104,13 +118,13 @@
             <img src="./octobo-logo.png" width="170" height="50" alt="">
           </a>
 
-          <a class="nav-link text-dark nav-item" href="#">Privacy Policy</a>
+          <!-- <a class="nav-link text-dark nav-item" href="#">Privacy Policy</a> -->
 
-          <a class="nav-link text-dark nav-item" href="#">Terms & Conditions</a>
+          <!-- <a class="nav-link text-dark nav-item" href="#">Terms & Conditions</a> -->
 
-          <a class="nav-link active text-dark nav-item" href="#">FAQ</a>
+          <!-- <a class="nav-link active text-dark nav-item" href="#">FAQ</a> -->
 
-          <a class="nav-link text-dark nav-item" href="#">Contact</a>
+          <!-- <a class="nav-link text-dark nav-item" href="#">Contact</a> -->
 
       </div>
 
@@ -129,17 +143,17 @@
   <div class=" GQ" style=>
     <h2 class = "text-success" > General Questions</h2>
   </div>
-
+<div class="container">
   <div class = "row">
      <div class ="col"></div>
-      <div class="accordion col-8 col-md-6" id="accordionExample">
+      <div class="accordion col-xs-10 col-md-6" id="accordionExample">
 
           <div class="border dropDown" id="headingOne">
             <h2 class="mb-0">
 
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <img src="dropDown.png" width="30" height="30">
-                what is Thinker-Tinker?
+                <img class="drop-down-icon"src="dropDown.png" width="30" height="30">
+                <div class="question-title">what is Thinker-Tinker?</div>
               </button>
             </h2>
           </div>
@@ -155,8 +169,8 @@
           <div class="border dropDown" id="headingOne">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                <img src="dropDown.png" width="30" height="30">
-                Is Thinker-Thinker Safe to kids?
+                <img class="drop-down-icon"src="dropDown.png" width="30" height="30">
+                <div class="question-title">Is Thinker-Thinker Safe to kids?</div>
               </button>
             </h2>
           </div>
@@ -171,8 +185,9 @@
           <div class="border dropDown" id="headingOne">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                <img src="dropDown.png" width="30" height="30">
-                what age are Thinker-Tinker toys suitable?
+                <img class="drop-down-icon"src="dropDown.png" width="30" height="30" style="float:left;">
+                <div class="question-title">what age are Thinker-Tinker toys suitable?</div>
+
               </button>
             </h2>
           </div>
@@ -187,8 +202,8 @@
           <div class="border dropDown" id="headingOne">
             <h2 class="mb-0">
               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
-                <img src="dropDown.png" width="30" height="30">
-                what is Thinker-Tinker?
+                <img class="drop-down-icon"src="dropDown.png" width="30" height="30">
+                <div class="question-title">what is Thinker-Tinker?</div>
               </button>
             </h2>
           </div>
@@ -199,7 +214,7 @@
             </div>
           </div>
 
-          <div class ="follow">
+          <!-- <div class ="follow">
                 <div class = "followText row justify-content-center">
                         Follow us
                 </div>
@@ -211,17 +226,18 @@
                     <div class = "followIcons rounded-circle"></div>
                 </div>
 
-          </div>
+          </div> -->
 
       </div>
       <div class ="col"></div>
 
     </div>
-
+</div>
     <footer>
       <p>
-          Read out <a href = "#" > <u>Privacy Policy </u> </a>and <a href = "#"> <u>Terms & Conditions </u> </a> Thinker-Tinker @ 2019  
-     </p>       
+          <!-- Read out <a href = "#" > <u>Privacy Policy </u> </a>and <a href = "#"> <u>Terms & Conditions </u> </a>  -->
+          Thinker-Tinker @ 2019
+     </p>
 
     </footer>
 
