@@ -14,6 +14,7 @@
   --lightBlue: #89d8f8;
   --darkBlue: #1A2D45;
   --yellow: #f8d51d;
+  --lightYellow: rgba(255, 239, 191, .5 );
   --purple: #872baf;
   --black: #092f5b;
   --green: #00cc5a;
@@ -155,13 +156,23 @@ img {
 
 .btn:hover { box-shadow: none; }
 
+/* .video-icon {
+  opacity: .6;
+  transition: opacity 0.35s;
+}
+.video-icon:hover {
+  opacity: 1 ;
+} */
+
 @media(min-width: 768px) {
   .btn { width: 321px; }
 }
 
 /** Modals **/
-#videoPressModal,
-#videoTestimonialsModal {
+
+/* #videoPressModal,
+#videoTestimonialsModal, */
+.modal-container {
   transition: opacity 0.35s;
   pointer-events: none;
   position: fixed;
@@ -173,14 +184,17 @@ img {
   top: 0;
 }
 
-#videoPressModal:target,
-#videoTestimonialsModal:target {
+/* #videoPressModal,
+#videoTestimonialsModal:target  */
+.modal-container:target
+{
   pointer-events: all;
   opacity: 1;
 }
 
-#videoPressModal .modal-inner,
-#videoTestimonialsModal .modal-inner {
+/* #videoPressModal .modal-inner,
+#videoTestimonialsModal .modal-inner , */
+.modal-container .modal-inner{
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   position: absolute;
@@ -189,21 +203,24 @@ img {
   top: 50%;
 }
 
-#videoPressModal .modal-inner iframe,
-#videoTestimonialsModal .modal-inner iframe {
+/* #videoPressModal .modal-inner iframe,
+#videoTestimonialsModal .modal-inner iframe, */
+.modal-container .modal-inner iframe {
   height: 200px;
 }
 
 @media (min-width: 768px) {
-  #videoPressModal .modal-inner iframe,
-  #videoTestimonialsModal .modal-inner iframe {
+  /* #videoPressModal .modal-inner iframe,
+  #videoTestimonialsModal .modal-inner iframe, */
+  .modal-container .modal-inner iframe {
     height: 550px;
     width: 940px;
   }
 }
 
-#videoPressModal a.close,
-#videoTestimonialsModal a.close {
+/* #videoPressModal a.close,
+#videoTestimonialsModal a.close  */
+.modal-container a.close  {
   background-color: rgb(0,0,0);
   transition: opacity 0.35s;
   position: absolute;
@@ -215,8 +232,9 @@ img {
   top: 0;
 }
 
-#videoPressModal a.close:hover,
-#videoTestimonialsModal a.close:hover {
+/* #videoPressModal a.close:hover,
+#videoTestimonialsModal a.close:hover, */
+.modal-container a.close:hover {
   opacity: 0.85;
 }
 
@@ -248,13 +266,60 @@ img {
 }
 
 /* Videos */
+.videos {
+  display: flex ;
+  flex-direction : row;
+  flex-wrap : wrap;
+}
+
+/* mobile */
+@media(max-width: 768px) {
+  .video.main {
+    width: 100%;
+    order: 1 ;
+  }
+  .video.left {
+    order : 2 ;
+  }
+
+  .video.right {
+    order : 3 ;
+  }
+  .video.left,
+  .video.right {
+    width :50% ;
+  }
+}
+
+/* desktop */
+@media(min-width: 769px) {
+  .video.main {
+    width: 50%;
+    order: 2 ;
+  }
+  .video.left {
+    order : 1 ;
+  }
+
+  .video.right {
+    order : 3 ;
+  }
+  .video.left,
+  .video.right {
+    width :25% ;
+  }
+}
+
 .video {
+
   -ms-align-items: center;
   display: -webkit-flex;
   align-items: center;
+
   position: relative;
   display: -ms-flex;
   display: flex;
+
 }
 
 .video a {
@@ -267,6 +332,9 @@ img {
   display: -o-flex;
   display: flex;
   width: 100%;
+}
+.video > img {
+  width:  100% ;
 }
 
 .video-icon { width: 53px !important; }
@@ -448,7 +516,12 @@ nav .right img {
 /**********************************
   PRODUCT PRESS
 ***********************************/
-.product-press { padding-bottom: 40px; }
+
+@media (min-width: 769px) {
+  .product-press {
+    padding-bottom: 40px;
+  }
+}
 
 .bar {
   background-color: var(--green);
@@ -480,9 +553,13 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
-  .product-press { padding-bottom: 222px; }
+  .product-press { padding-bottom: 100px; }
 
-  .product-press .video img:nth-child(1) {
+  .videos {
+    padding-bottom: 100px;
+  }
+
+  .videos .video img:nth-child(1) {
     width: 620px;
   }
 
@@ -506,13 +583,17 @@ nav .right img {
 
   .bar .engadget,
   .bar .tech-crunch {
-    margin: 0 32px;
+    /* margin: 0 32px; */
   }
 }
 
 /**********************************
   PRODUCT FEATURES
 ***********************************/
+.product-features {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .product-features .feature-tabs {
   border-bottom: 2px solid var(--mainBlueOpacity);
   justify-content: space-between;
@@ -857,8 +938,10 @@ nav .right img {
   display: -webkit-flex;
   align-items: center;
   padding-top: 72px;
+  padding-bottom: 172px;
   display: -ms-flex;
   display: flex;
+  background-color: var(--lightBlueOpacity);
 }
 
 .storykits .header { padding-bottom: 58px; }
@@ -879,6 +962,9 @@ nav .right img {
   padding-top: 0;
 }
 
+.storykits .box__content{
+  background-color: white;
+}
 .box__content .header {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -951,7 +1037,7 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
-  .storykits { padding-bottom: 83px; }
+  .storykits { padding-bottom: 183px; }
 
   .storykits .box { width: 847px; }
 
@@ -1149,13 +1235,15 @@ nav .right img {
 }
 
 .perfect-for {
+  background-color: var(--lightYellow);
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   justify-content: center;
   -ms-align-items: center;
   flex-direction: column;
   display: -webkit-flex;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
+  padding-top: 140px;
   padding-right: 38px;
   align-items: center;
   padding-left: 37px;
@@ -1179,7 +1267,7 @@ nav .right img {
 .perfect-for .perfect-for-grid .text {
   padding-bottom: 40px;
   text-align: center;
-  padding-top: 41px;
+  padding-top: 0px;
   width: 290px;
 }
 
@@ -1258,7 +1346,7 @@ nav .right img {
   }
 
   .perfect-for {
-    padding-bottom: 254.4px;
+    padding-bottom: 154.4px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -1321,7 +1409,7 @@ nav .right img {
   MADE BY PARENTS
 ***********************************/
 .made-by {
-  background-color: var(--lightBlueOpacity);
+  /* background-color:  var(--lightBlueOpacity); /* var(--lightBlueOpacity);*/ */
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -ms-align-items: center;
@@ -1331,6 +1419,7 @@ nav .right img {
   position: relative;
   display: -ms-flex;
   display: flex;
+
 }
 
 .made-by .made-by-grid {
@@ -1355,7 +1444,7 @@ nav .right img {
 
 @media (min-width: 992px) {
   .made-by {
-    padding-bottom: 79.7px;
+    padding-bottom: 379.7px;
     padding-top: 190px;
   }
 
@@ -2019,7 +2108,7 @@ nav .right img {
 
 @media (min-width: 992px) {
   .testimonials {
-    background-color: var(--lightPurple);
+    background-color: var(--lightYellow);
     height: 680px;
   }
 
@@ -2028,6 +2117,9 @@ nav .right img {
     width: 100%;
     z-index: 0;
     top: -50%;
+  }
+  .testimonials .video img {
+    width: 100%;
   }
 
   .testimonials .header {
@@ -2092,6 +2184,7 @@ nav .right img {
   MEET OCTOBO'S FRIENDS
 ***********************************/
 .meet-friends {
+  /* background-color: var(--lightBlueOpacity); */
   padding-bottom: 31px;
   position: relative;
 }

@@ -32,11 +32,8 @@ $(document).ready(function() {
 
   // stop video embed from playing
   $('.close').click(function () {
-    $('#videoPressModal iframe').attr("src", jQuery("#videoPressModal iframe").attr("src"));
-  });
-
-  $('.close').click(function () {
-    $('#videoTestimonialsModal iframe').attr("src", jQuery("#videoTestimonialsModal iframe").attr("src"));
+    var $iframe = $(this).parent().find("iframe");
+    $iframe.attr("src", $iframe.attr("src"));
   });
 
   // product features
