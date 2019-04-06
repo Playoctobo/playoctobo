@@ -415,6 +415,8 @@ nav .right img {
   MASTHEAD
 ***********************************/
 .masthead {
+  background-image: url("../images/playoctobo-header.png");
+  background-size: cover;
   position: relative;
   padding: 0 35px;
 }
@@ -572,7 +574,7 @@ nav .right img {
     flex-direction: row;
     align-items: center;
     display: -ms-flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
   }
 
