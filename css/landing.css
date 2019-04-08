@@ -443,6 +443,10 @@ nav .right img {
   background-size: cover;
   background-position: center center;
 }
+.bg-overlay {
+  background-color: rgba(0,0,0,.2);
+}
+
 .masthead {
 
 
@@ -452,9 +456,7 @@ nav .right img {
 .masthead small {
   color:  white ;
 }
-.masthead .bg-overlay {
-  background-color: rgba(0,0,0,.2);
-}
+
 .masthead .inner {
   position: relative;
   display: block;
