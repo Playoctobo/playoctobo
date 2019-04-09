@@ -28,9 +28,14 @@ url("color: #000;ss/fonts/Harabara.svg#filename") format("svg"); */
   --black: #092f5b;
   --green: #00cc5a;
   font-size: 100%;
+
   --blue: #15d4ef;
   --white: #fff;
   --buttonBlue : rgb(89,192,244);
+}
+
+* {
+  font-family: "Quicksand Bold";
 }
 
 html, body {
@@ -280,6 +285,7 @@ img {
   display: flex ;
   flex-direction : row;
   flex-wrap : wrap;
+
 }
 
 /* mobile */
@@ -303,6 +309,12 @@ img {
 
 /* desktop */
 @media(min-width: 769px) {
+  .videos {
+    padding: 30px;
+  }
+  .videos .video {
+    padding: 5px;
+  }
   .video.main {
     width: 50%;
     order: 2 ;
@@ -497,7 +509,7 @@ nav .right img {
   font-size: 17px;
   font-weight: 900;
   text-shadow: grey 0.05em 0.05em 0.1em;
-  font-family: "Quicksand Bold";
+
   padding-top: 200px;
 }
 
@@ -1230,9 +1242,9 @@ nav .right img {
     right: -5%;
   }
 
-  .storykit__info.storykit__info--purple .tokens { width: 134px; }
-  .storykit__info.storykit__info--purple .idea { width: 260px; }
-  .storykit__info.storykit__info--purple .music { width: 190px; }
+  /* .storykit__info.storykit__info--purple .tokens { width: 134px; } */
+  /* .storykit__info.storykit__info--purple .idea { width: 260px; } */
+  /* .storykit__info.storykit__info--purple .music { width: 190px; } */
 }
 
 @media (min-width: 1440px) {
@@ -1320,9 +1332,9 @@ nav .right img {
     left: -2%;
   }
 
-  .storykit__info.storykit__info--yellow .tokens { width: 134px; }
+  /* .storykit__info.storykit__info--yellow .tokens { width: 134px; }
   .storykit__info.storykit__info--yellow .music { width: 260px; }
-  .storykit__info.storykit__info--yellow .idea { width: 190px; }
+  .storykit__info.storykit__info--yellow .idea { width: 190px; } */
 }
 
 /**********************************
@@ -2225,8 +2237,10 @@ nav .right img {
 
   .testimonials .header {
     padding: 87px 45px 86px 45px;
-    border-radius: 3px;
-    height: 322px;
+    /* border-radius: 3px; */
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 310px;
     width: 380px;
     z-index: 1;
   }
@@ -2245,7 +2259,7 @@ nav .right img {
     padding-bottom: 40px;
     display: inline-grid;
     align-items: center;
-    margin-top: 180px;
+    margin-top: 270px;
   }
 
   .testimonials .other-content .slider { overflow: hidden; }
@@ -2254,12 +2268,17 @@ nav .right img {
     border-radius: 3px;
     text-align: left;
     height: 310px;
-    width: 450px;
+    width: 500px;
+  }
+
+  .testimonials .swiper-container {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   .testimonials .other-content .slider .slider-content p,
   .testimonials .other-content .slider .slider-content h3 {
-    width: 305px;
+    width: 350px;
     margin: auto;
   }
 
