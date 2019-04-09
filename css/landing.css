@@ -314,6 +314,10 @@ img {
   }
   .videos .video {
     padding: 5px;
+
+  }
+  .videos .video img {
+    border-radius: 10px;
   }
   .video.main {
     width: 50%;
