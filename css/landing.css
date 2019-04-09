@@ -1221,6 +1221,9 @@ nav .right img {
 }
 
 @media (min-width: 992px) {
+  .storykits .box__content .italic {
+    font-size: .85em ;
+  }
   .storykits .box.purple > .hex {
     left: -40px;
     top: -11%;
@@ -1242,7 +1245,7 @@ nav .right img {
   }
 
   .storykit__info.storykit__info--purple {
-    bottom: -15%;
+    bottom: -18%;
     right: -5%;
   }
 
@@ -1332,7 +1335,7 @@ nav .right img {
   }
 
   .storykit__info.storykit__info--yellow {
-    bottom: -8%;
+    bottom: -10%;
     left: -2%;
   }
 
