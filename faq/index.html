@@ -2,6 +2,36 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PlayOctobo</title>
+    <meta name="description" content="Octobo is an interactive smart plush comes with storybooks, puzzle tokens, and an app library. It reinvents play time to make it a magical learning adventure">
+    <meta name="twitter:description" content="Octobo is an interactive smart plush comes with storybooks, puzzle tokens, and an app library. It reinvents play time to make it a magical learning adventure">
+    <meta name="twitter:title" content="Octobo｜Interactive smart toy">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://www.playoctobo.com">
+    <meta property="og:description" content="Octobo is an interactive smart plush comes with storybooks, puzzle tokens, and an app library. It reinvents play time to make it a magical learning adventure">
+    <meta property="og:title" content="Octobo｜Interactive smart toy">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/favIcon.png">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/landing.css"> -->
+
+
+
+
+
+
+
+
+
+
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,7 +40,14 @@
 
     <title>FAQ</title>
     <style>
-
+      .navbar-brand {
+        margin : 0 ;
+        padding : 0 ;
+      }
+      .navbar-brand img {
+        margin : -10px 0;
+        height : 80px;
+      }
       .BackGroundImage{
         background-image: url('./WebsiteAssets/PhotoBanner_1280_2.png');
 
@@ -103,6 +140,47 @@
           text-decoration: none !important;
 
         }
+
+
+        /**********************************
+          FOOTER
+        ***********************************/
+        footer {
+          background-color: var(--green);
+          padding-bottom: 23px;
+          padding-top: 24px;
+        }
+
+        footer .social-links {
+          justify-content: center;
+          display: -webkit-flex;
+          display: -ms-flex;
+          display: flex;
+        }
+
+        footer .social-links img { height: 53px; }
+
+        footer .social-links a {
+          transition: opacity 0.3s ease;
+          margin-right: 23px;
+          opacity: 0.5;
+        }
+
+        footer .social-links a:hover {
+          opacity: 1;
+        }
+
+        footer .social-links a:last-child {
+          margin-right: 0;
+        }
+
+        footer p {
+          letter-spacing: 0.2px;
+          color: var(--white);
+          text-align: center;
+          line-height: 1.75;
+          font-size: 12px;
+        }
     </style>
   </head>
   <body>
@@ -115,7 +193,7 @@
     <!-- <div class="navbar-nav mr-auto topnav justify-content-center flex-column flex-md-row"> -->
       <div class="navbar-nav justify-content-center collapse navbar-collapse" id="navbarTogglerDemo01">
           <a class="navbar-brand" href="/">
-            <img src="./octobo-logo.png" width="170" height="50" alt="">
+            <img src="../images/octobo-logo.png"   alt="">
           </a>
 
           <!-- <a class="nav-link text-dark nav-item" href="#">Privacy Policy</a> -->
@@ -160,7 +238,7 @@
 
           <div id="collapseOne" class="collapse border-0" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Thinker-Tinker is a team of passionate designers based in Los Angeles, CA. We are a tech company on a journey to create smart companions for kids with a true personality, which is also an expandable platform to support learning in multiple domains — math, reading, problem-solving, emotional growth, you name it!
             </div>
           </div>
 
@@ -352,7 +430,7 @@
 
           <div id="collapseTwelve" class="collapse border-0" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              If you need help with any of our Thinker-Tinker toys, apps, or online support, email us at <a href="mailto:help@playoctobo.com">help@playoctobo.com</a>. For press inquiries, email <a href="mailto:press@playoctobo.com">press@playoctobo.com</a>. 
+              If you need help with any of our Thinker-Tinker toys, apps, or online support, email us at <a href="mailto:help@playoctobo.com">help@playoctobo.com</a>. For press inquiries, email <a href="mailto:press@playoctobo.com">press@playoctobo.com</a>.
 
             </div>
           </div>
@@ -375,14 +453,26 @@
 
     </div>
 </div>
-    <footer>
-      <p>
-          <!-- Read out <a href = "#" > <u>Privacy Policy </u> </a>and <a href = "#"> <u>Terms & Conditions </u> </a>  -->
-          Thinker-Tinker @ 2019
-     </p>
+<footer>
+  <section class="social-links">
+    <a href="https://www.facebook.com/OCTOBO" class="facebook" target="_blank">
+      <img src="../images/facebook.png" alt="Facebook">
+    </a>
 
-    </footer>
+    <a href="https://twitter.com/playoctobo" class="twitter" target="_blank">
+      <img src="../images/twitter.png" alt="Twitter">
+    </a>
 
+    <a href="https://www.instagram.com/playoctobo/" class="instagram" target="_blank">
+      <img src="../images/instagram.png" alt="instagram">
+    </a>
+  </section>
+
+  <p>
+    Octobo® are registered trademarks of Thinker-Tinker, Inc. <br>
+    Thinker-Tinker, 2019. All Rights Reserved.
+  </p>
+</footer>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

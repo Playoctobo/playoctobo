@@ -35,9 +35,11 @@ url("color: #000;ss/fonts/Harabara.svg#filename") format("svg"); */
 }
 
 * {
+  font-family: 'Montserrat', sans-serif;
+}
+.masthead *{
   font-family: "Quicksand Bold";
 }
-
 html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
