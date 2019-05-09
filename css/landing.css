@@ -28,7 +28,7 @@ url("color: #000;ss/fonts/Harabara.svg#filename") format("svg"); */
   --black: #092f5b;
   --green: #00cc5a;
   font-size: 100%;
-
+  --buttonOrange : #E77A33 ;
   --blue: #15d4ef;
   --white: #fff;
   --buttonBlue : rgb(89,192,244);
@@ -150,7 +150,7 @@ img {
 .btn {
   box-shadow: 0 10px 40px -10px rgba(21, 212, 239, 0.5);
   font-family: 'galano_grotesque_demobold', sans-serif;
-  background-color: var(--buttonBlue);
+  background-color: var(--buttonOrange);
   transition: box-shadow 0.4;
   justify-content: center;
   -ms-align-items: center;
@@ -457,7 +457,7 @@ nav .right img {
   MASTHEAD
 ***********************************/
 .header-bg {
-  background-image: url("../images/playoctobo-header.png");
+  background-image: url("../images/playoctobo-header2.png");
   background-size: cover;
   background-position: center center;
 }
