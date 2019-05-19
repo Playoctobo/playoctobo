@@ -2428,3 +2428,34 @@ footer p {
   line-height: 1.75;
   font-size: 12px;
 }
+.playtime-magical {
+
+}
+.playtime-magical .content {
+  display : flex ;
+}
+.playtime-magical header * {
+  text-align: center;
+}
+.playtime-magical .content section {
+  width :50%;
+  height: 500px;
+}
+.playtime-magical .content ol {
+  list-style-type : upper-alpha ;
+}
+
+.playtime-magical .content .left  {
+  background : url(../images/Features/PlayOctobo-Features_Sensors1.png);
+  background-size : 70% ;
+  background-position : top right;
+  background-repeat: no-repeat ;
+
+}
+
+.playtime-magical .content .right  {
+  background : url(../images/Features/PlayOctobo-Features_Sensors2.png);
+  background-size : 60% ;
+  background-position : top left;
+  background-repeat: no-repeat ;
+}
