@@ -24,7 +24,7 @@
     background-image: url('https://playoctobo.github.io/playoctobo_dev/images/shopify/6-Octobo-Plush Vector.png');
   /*   min-height : 768px ; */
     width : 100%;
-    height : 742px ;
+    height : 800px ;
     background-size : 1600px auto ; // 3941 2927
     background-position : calc(50% - 25px) top;
     background-repeat : none ;
@@ -36,6 +36,13 @@
     height : 270px;
     top : 370px;
   }
+  #interactive-footer {
+    width :100%;
+    position: absolute;
+    bottom : 50px ;
+    text-align : center ;
+  }
+
   #mini-game-eye-container-inner {
 
     height : 270px;
@@ -48,8 +55,8 @@
     }
 
 /*     background : rgba(0,0,0,.); */
-    border-top : rgba(0,0,0,.1) 1px solid ;
-    border-bottom : rgba(0,0,0,.1) 1px solid ;
+    // border-top : rgba(0,0,0,.1) 1px solid ;
+    // border-bottom : rgba(0,0,0,.1) 1px solid ;
     display :flex ;
     align-items: center;
     justify-content : center ;
@@ -88,7 +95,7 @@
 
     }
 
-    .eye.active {
+  .eye.active {
 	  filter: saturate(1) contrast(1) brightness(1);
       flex : 0 0 270px;
       width : 270px;
@@ -108,4 +115,20 @@
 
 
 
+}
+.btn.btn-black {
+  &:not([disabled]):hover,
+  &:focus {
+    background-color: lighten(black,20%);
+  }
+  background : black ;
+}
+.btn.btn-white {
+  &:not([disabled]):hover,
+  &:focus {
+    color : $color-body-text;
+    background-color: darken(white,20%);
+  }
+  color : $color-body-text;
+  background : white ;
 }
